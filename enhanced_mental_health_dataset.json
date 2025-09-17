@@ -1,0 +1,82 @@
+{
+  "mental_health": [
+    {
+      "condition": "stress",
+      "keywords": ["stress", "stressed", "anxiety", "tension", "overwhelmed", "pressure", "stress management"],
+      "support": {
+        "symptoms": ["Headaches", "Muscle tension", "Sleep problems", "Irritability", "Fatigue", "Racing thoughts"],
+        "coping_strategies": ["Diaphragmatic breathing", "Progressive muscle relaxation", "Mindfulness meditation", "Regular exercise", "Social connection", "Time management"],
+        "immediate_help": ["Take 10 deep breaths", "Go for a walk", "Listen to calming music", "Practice mindfulness", "Call a friend"],
+        "professional_help": "Consider counseling if stress persists for more than 2 weeks or interferes with daily life",
+        "techniques": ["4-7-8 breathing technique", "Body scan meditation", "Cognitive restructuring", "Gratitude practice"]
+      }
+    },
+    {
+      "condition": "loneliness",
+      "keywords": ["lonely", "loneliness", "isolated", "alone", "social isolation", "disconnected"],
+      "support": {
+        "symptoms": ["Sadness", "Empty feelings", "Lack of energy", "Sleep issues", "Loss of appetite", "Social withdrawal"],
+        "coping_strategies": ["Join social groups", "Volunteer", "Call friends/family", "Take up hobbies", "Pet therapy", "Online communities"],
+        "immediate_help": ["Call a friend", "Go to public places", "Join online communities", "Practice self-care", "Write in journal"],
+        "professional_help": "Seek therapy if loneliness affects daily functioning or leads to depression",
+        "techniques": ["Gradual social exposure", "Building social skills", "Self-compassion practice"]
+      }
+    },
+    {
+      "condition": "sleep_problems",
+      "keywords": ["insomnia", "sleep", "sleepless", "tired", "fatigue", "sleep disorder", "can't sleep"],
+      "support": {
+        "symptoms": ["Difficulty falling asleep", "Frequent waking", "Daytime fatigue", "Irritability", "Concentration problems"],
+        "coping_strategies": ["Consistent sleep schedule", "Dark, cool room", "Limit screen time", "Avoid caffeine", "Relaxation routine", "Morning sunlight"],
+        "immediate_help": ["Try deep breathing", "Read a book", "Warm bath", "Herbal tea", "Progressive muscle relaxation"],
+        "professional_help": "See doctor if sleep problems persist for more than 3 weeks",
+        "techniques": ["Sleep hygiene", "Stimulus control", "Sleep restriction", "Cognitive behavioral therapy for insomnia"]
+      }
+    },
+    {
+      "condition": "depression",
+      "keywords": ["depression", "depressed", "sad", "hopeless", "worthless", "suicidal", "down", "blue"],
+      "support": {
+        "symptoms": ["Persistent sadness", "Loss of interest", "Fatigue", "Sleep changes", "Appetite changes", "Guilt", "Concentration problems"],
+        "coping_strategies": ["Regular exercise", "Social support", "Healthy routine", "Mindfulness", "Journaling", "Behavioral activation"],
+        "immediate_help": ["Reach out to someone", "Practice self-care", "Avoid alcohol", "Get sunlight", "Engage in pleasant activities"],
+        "professional_help": "Seek immediate help if having suicidal thoughts. Call emergency services or crisis hotline.",
+        "crisis_hotline": "National Suicide Prevention Lifeline: 988",
+        "techniques": ["Cognitive behavioral therapy", "Mindfulness-based therapy", "Interpersonal therapy"]
+      }
+    },
+    {
+      "condition": "anxiety",
+      "keywords": ["anxiety", "anxious", "panic", "worry", "fear", "nervous", "panic attack"],
+      "support": {
+        "symptoms": ["Excessive worry", "Restlessness", "Fatigue", "Difficulty concentrating", "Muscle tension", "Sleep disturbance"],
+        "coping_strategies": ["Deep breathing", "Grounding techniques", "Regular exercise", "Limit caffeine", "Challenge negative thoughts", "Relaxation techniques"],
+        "immediate_help": ["5-4-3-2-1 grounding technique", "Deep breathing", "Progressive muscle relaxation", "Call support person"],
+        "professional_help": "Consider therapy if anxiety interferes with daily activities or relationships",
+        "techniques": ["Exposure therapy", "Cognitive restructuring", "Mindfulness-based stress reduction", "Acceptance and commitment therapy"]
+      }
+    },
+    {
+      "condition": "reproductive_health",
+      "keywords": ["reproductive health", "menstrual", "pregnancy", "fertility", "sexual health", "pms", "periods"],
+      "support": {
+        "symptoms": ["Irregular periods", "Pelvic pain", "Mood changes", "Fertility concerns", "Sexual dysfunction"],
+        "coping_strategies": ["Track menstrual cycle", "Healthy diet", "Regular exercise", "Stress management", "Safe sex practices", "Regular screenings"],
+        "immediate_help": ["Use heating pad for cramps", "Stay hydrated", "Rest when needed", "Practice relaxation"],
+        "professional_help": "Consult gynecologist for persistent issues, irregular cycles, or fertility concerns",
+        "techniques": ["Mindful eating", "Stress reduction", "Body awareness", "Communication skills"]
+      }
+    },
+    {
+      "condition": "happiness",
+      "keywords": ["happiness", "joy", "well-being", "positive", "life satisfaction", "fulfillment"],
+      "support": {
+        "symptoms": ["Low mood", "Lack of motivation", "Feeling unfulfilled", "Loss of pleasure"],
+        "coping_strategies": ["Cultivate gratitude", "Build social connections", "Acts of kindness", "Find purpose", "Practice mindfulness", "Exercise regularly"],
+        "immediate_help": ["Practice gratitude", "Connect with loved ones", "Engage in enjoyable activities", "Spend time in nature"],
+        "professional_help": "Consider positive psychology coaching or therapy to enhance well-being",
+        "techniques": ["Gratitude journaling", "Savoring experiences", "Character strengths identification", "Flow activities"]
+      }
+    }
+  ]
+}

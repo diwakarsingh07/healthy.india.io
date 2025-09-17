@@ -1,0 +1,64 @@
+{
+  "diet_plans": [
+    {
+      "condition": "diabetes",
+      "keywords": ["diabetes", "blood sugar", "diabetic", "sugar control", "insulin"],
+      "diet_plan": {
+        "foods_to_eat": ["Leafy greens", "Whole grains", "Lean proteins", "Nuts", "Berries", "Fish", "Avocado", "Beans"],
+        "foods_to_avoid": ["White bread", "Sugary drinks", "Processed foods", "Fried foods", "Sweets", "White rice"],
+        "meal_timing": "Eat small, frequent meals every 3-4 hours to maintain stable blood sugar",
+        "tips": ["Monitor blood sugar regularly", "Stay hydrated", "Exercise after meals", "Count carbohydrates"]
+      }
+    },
+    {
+      "condition": "weight_loss",
+      "keywords": ["weight loss", "lose weight", "obesity", "fat loss", "slim down", "diet plan"],
+      "diet_plan": {
+        "foods_to_eat": ["Vegetables", "Fruits", "Lean meats", "Eggs", "Greek yogurt", "Quinoa", "Oats", "Legumes"],
+        "foods_to_avoid": ["Fast food", "Sugary snacks", "Alcohol", "Refined carbs", "Processed meats", "Soda"],
+        "meal_timing": "3 main meals + 2 healthy snacks, eat slowly",
+        "tips": ["Drink water before meals", "Eat slowly", "Control portions", "Exercise regularly", "Track calories"]
+      }
+    },
+    {
+      "condition": "heart_health",
+      "keywords": ["heart", "cardiac", "cholesterol", "blood pressure", "hypertension", "cardiovascular"],
+      "diet_plan": {
+        "foods_to_eat": ["Salmon", "Oats", "Berries", "Dark chocolate", "Tomatoes", "Almonds", "Olive oil", "Spinach"],
+        "foods_to_avoid": ["Trans fats", "Excess salt", "Red meat", "Sugary foods", "Processed foods", "Butter"],
+        "meal_timing": "Regular meals, avoid late night eating",
+        "tips": ["Limit sodium intake", "Choose healthy fats", "Eat more fiber", "DASH diet principles"]
+      }
+    },
+    {
+      "condition": "mediterranean",
+      "keywords": ["mediterranean diet", "longevity", "brain health", "olive oil"],
+      "diet_plan": {
+        "foods_to_eat": ["Fruits", "Vegetables", "Whole grains", "Legumes", "Nuts", "Olive oil", "Fish", "Poultry"],
+        "foods_to_avoid": ["Processed foods", "Red meat", "Refined sugars", "Trans fats"],
+        "meal_timing": "Regular meals with family, mindful eating",
+        "tips": ["Use olive oil as primary fat", "Eat fish twice weekly", "Enjoy meals socially", "Moderate wine consumption"]
+      }
+    },
+    {
+      "condition": "keto",
+      "keywords": ["keto", "ketogenic", "low carb", "high fat", "ketosis"],
+      "diet_plan": {
+        "foods_to_eat": ["Meat", "Fish", "Eggs", "Cheese", "Nuts", "Avocado", "Leafy greens", "Coconut oil"],
+        "foods_to_avoid": ["Grains", "Sugar", "Fruits", "Potatoes", "Bread", "Pasta", "Rice"],
+        "meal_timing": "2-3 meals per day, intermittent fasting compatible",
+        "tips": ["Stay hydrated", "Monitor ketones", "Increase electrolytes", "Gradual transition"]
+      }
+    },
+    {
+      "condition": "plant_based",
+      "keywords": ["vegan", "vegetarian", "plant based", "no meat", "dairy free"],
+      "diet_plan": {
+        "foods_to_eat": ["Fruits", "Vegetables", "Legumes", "Nuts", "Seeds", "Whole grains", "Tofu", "Tempeh"],
+        "foods_to_avoid": ["Meat", "Dairy", "Eggs", "Honey", "Gelatin", "Animal products"],
+        "meal_timing": "Regular meals with protein at each meal",
+        "tips": ["Supplement B12", "Combine proteins", "Eat variety of colors", "Include iron-rich foods"]
+      }
+    }
+  ]
+}

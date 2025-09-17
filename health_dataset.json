@@ -1,0 +1,1115 @@
+{
+  "Disclaimer": "This information is for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Never use this information to self-diagnose or self-treat. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. The medicines listed are examples and must only be taken under a doctor's prescription and supervision.",
+  "diseases": [
+    {
+      "id": 1,
+      "name": "Common Cold",
+      "description": "A viral infection of the upper respiratory tract (nose and throat).",
+      "symptoms": ["Runny or stuffy nose", "Sore throat", "Cough", "Congestion", "Slight body aches", "Mild headache", "Sneezing", "Low-grade fever", "General malaise"],
+      "medicines": ["No specific antiviral. Symptom relief: Decongestants (Pseudoephedrine)", "Cough suppressants (Dextromethorphan)", "Expectorants (Guaifenesin)", "Pain relievers (Acetaminophen, Ibuprofen)"],
+      "prevention": ["Frequent handwashing", "Avoid close contact with sick individuals", "Avoid touching face with unwashed hands"],
+      "home_care": ["Rest", "Stay hydrated", "Gargle salt water", "Use humidifier", "Saline nasal drops"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 2,
+      "name": "Influenza (The Flu)",
+      "description": "A contagious respiratory illness caused by influenza viruses.",
+      "symptoms": ["Fever over 100.4°F (38°C)", "Muscle aches", "Chills and sweats", "Headache", "Dry cough", "Fatigue", "Nasal congestion", "Sore throat"],
+      "medicines": ["Antiviral drugs (Oseltamivir, Zanamivir) - prescription required", "Pain relievers (Acetaminophen, Ibuprofen)", "Decongestants"],
+      "prevention": ["Annual flu vaccine", "Good hand hygiene", "Covering mouth when coughing/sneezing", "Staying home when sick"],
+      "home_care": ["Rest", "Hydration", "Warm compresses for aches", "Over-the-counter symptom relief"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 3,
+      "name": "COVID-19",
+      "description": "A respiratory illness caused by the SARS-CoV-2 virus.",
+      "symptoms": ["Fever or chills", "Cough", "Shortness of breath", "Fatigue", "Muscle aches", "Headache", "Loss of taste or smell", "Sore throat", "Congestion"],
+      "medicines": ["Antiviral medications (Paxlovid, Remdesivir) - prescription required", "Monoclonal antibodies", "Pain relievers"],
+      "prevention": ["Vaccination", "Mask-wearing", "Hand hygiene", "Physical distancing"],
+      "home_care": ["Isolation", "Rest", "Hydration", "Symptom monitoring", "Over-the-counter medicines for symptom relief"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 4,
+      "name": "Strep Throat",
+      "description": "A bacterial infection causing inflammation and pain in the throat.",
+      "symptoms": ["Sudden severe sore throat", "Painful swallowing", "Fever", "Red, swollen tonsils", "White patches on tonsils", "Swollen lymph nodes"],
+      "medicines": ["Antibiotics (Penicillin, Amoxicillin) - prescription required", "Pain relievers"],
+      "prevention": ["Good hand hygiene", "Avoid sharing utensils", "Cover mouth when coughing"],
+      "home_care": ["Salt water gargles", "Warm liquids", "Throat lozenges", "Rest", "Humidifier"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 5,
+      "name": "Pneumonia",
+      "description": "Infection that inflames air sacs in one or both lungs.",
+      "symptoms": ["Chest pain when breathing/coughing", "Confusion", "Cough with phlegm", "Fatigue", "Fever, sweating, chills", "Shortness of breath"],
+      "medicines": ["Antibiotics (for bacterial) - prescription required", "Antiviral drugs (for viral)", "Cough medicine", "Fever reducers"],
+      "prevention": ["Vaccination", "Good hygiene", "No smoking", "Strong immune system"],
+      "home_care": ["Adequate rest", "Hydration", "Taking all prescribed medication", "Breathing exercises"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 6,
+      "name": "Bronchitis",
+      "description": "Inflammation of the lining of bronchial tubes.",
+      "symptoms": ["Persistent cough", "Production of mucus", "Fatigue", "Shortness of breath", "Slight fever/chills", "Chest discomfort"],
+      "medicines": ["Cough medicine", "Bronchodilators - prescription required", "Anti-inflammatory drugs"],
+      "prevention": ["Avoid lung irritants", "Hand washing", "Wear mask around pollutants"],
+      "home_care": ["Humidify air", "Hydration", "Rest", "Over-the-counter pain relievers"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 7,
+      "name": "Sinusitis",
+      "description": "Inflammation of the tissue lining the sinuses.",
+      "symptoms": ["Thick nasal discharge", "Nasal obstruction", "Facial pain/pressure", "Reduced smell/taste", "Cough", "Fatigue"],
+      "medicines": ["Nasal corticosteroids", "Decongestants", "Antibiotics (if bacterial) - prescription required"],
+      "prevention": ["Avoid upper respiratory infections", "Manage allergies", "Avoid cigarette smoke"],
+      "home_care": ["Saline nasal spray", "Nasal irrigation", "Warm compresses", "Hydration"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 8,
+      "name": "Tuberculosis (TB)",
+      "description": "A potentially serious infectious disease affecting the lungs.",
+      "symptoms": ["Cough lasting 3+ weeks", "Coughing up blood", "Chest pain", "Unintentional weight loss", "Fatigue", "Fever", "Night sweats"],
+      "medicines": ["Antibiotics (Isoniazid, Rifampin) - long-term treatment under strict medical supervision"],
+      "prevention": ["Vaccination (where applicable)", "Good ventilation", "Early identification/treatment"],
+      "home_care": ["Complete full course of medication", "Nutritional support", "Rest"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 9,
+      "name": "Mononucleosis (Mono)",
+      "description": "Often called the kissing disease, caused by Epstein-Barr virus.",
+      "symptoms": ["Extreme fatigue", "Sore throat", "Fever", "Swollen lymph nodes", "Swollen tonsils", "Headache", "Skin rash"],
+      "medicines": ["Pain relievers (Acetaminophen, Ibuprofen)", "Corticosteroids for severe swelling - prescription required"],
+      "prevention": ["Avoid kissing infected people", "Don't share food/utensils", "Good hand hygiene"],
+      "home_care": ["Adequate rest", "Hydration", "Gargle salt water", "Over-the-counter pain relievers"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 10,
+      "name": "Urinary Tract Infection (UTI)",
+      "description": "Infection in any part of the urinary system.",
+      "symptoms": ["Strong urge to urinate", "Burning sensation", "Passing small amounts", "Cloudy urine", "Pelvic pain"],
+      "medicines": ["Antibiotics (Trimethoprim, Fosfomycin) - prescription required", "Pain medication"],
+      "prevention": ["Drink plenty of water", "Wipe front to back", "Urinate after intercourse"],
+      "home_care": ["Hydration", "Avoid irritants (caffeine, alcohol)", "Heating pad for discomfort"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 11,
+      "name": "Yeast Infection (Candidiasis)",
+      "description": "Fungal infection caused by Candida overgrowth.",
+      "symptoms": ["Vaginal itching", "Burning", "White discharge", "Redness/swelling", "Pain during intercourse/urination"],
+      "medicines": ["Antifungal creams (Clotrimazole) - some OTC, some prescription", "Oral antifungal (Fluconazole) - prescription required"],
+      "prevention": ["Wear cotton underwear", "Avoid tight-fitting clothes", "Control blood sugar"],
+      "home_care": ["Yogurt with live cultures", "Probiotics", "Avoid douches"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 12,
+      "name": "Bacterial Vaginosis",
+      "description": "An overgrowth of bacteria in the vagina.",
+      "symptoms": ["Thin gray/white discharge", "Fishy odor", "Vaginal itching", "Burning during urination"],
+      "medicines": ["Antibiotics (Metronidazole, Clindamycin) - prescription required"],
+      "prevention": ["Avoid douching", "Limit number of sex partners", "Use condoms"],
+      "home_care": ["Probiotics", "Practice good hygiene", "Wear cotton underwear"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 13,
+      "name": "Hepatitis A",
+      "description": "Highly contagious liver infection from HAV.",
+      "symptoms": ["Fatigue", "Nausea/vomiting", "Abdominal pain", "Clay-colored bowel movements", "Loss of appetite", "Fever", "Jaundice"],
+      "medicines": ["No specific treatment. Supportive care.", "Vaccination for prevention"],
+      "prevention": ["Vaccination", "Good hand hygiene", "Safe food/water practices"],
+      "home_care": ["Rest", "Hydration", "Adequate nutrition", "Avoid alcohol"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 14,
+      "name": "Hepatitis B",
+      "description": "Serious liver infection caused by HBV.",
+      "symptoms": ["Abdominal pain", "Dark urine", "Fever", "Joint pain", "Loss of appetite", "Nausea/vomiting", "Jaundice"],
+      "medicines": ["Antiviral drugs (Tenofovir, Entecavir) - prescription required", "Interferon injections"],
+      "prevention": ["Vaccination", "Safe sex practices", "Avoid sharing needles"],
+      "home_care": ["Rest", "Nutrition", "Avoid alcohol/toxins", "Follow medical advice"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 15,
+      "name": "Hepatitis C",
+      "description": "Liver infection caused by HCV, often chronic.",
+      "symptoms": ["Bleeding easily", "Bruising easily", "Fatigue", "Poor appetite", "Jaundice", "Dark urine", "Itchy skin"],
+      "medicines": ["Antiviral medications (direct-acting antivirals) - prescription required"],
+      "prevention": ["Avoid sharing needles", "Safe healthcare practices", "Use condoms"],
+      "home_care": ["Avoid alcohol", "Medications as prescribed", "Regular doctor visits"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 16,
+      "name": "HIV/AIDS",
+      "description": "Chronic condition caused by human immunodeficiency virus.",
+      "symptoms": ["Fever", "Fatigue", "Swollen lymph nodes", "Weight loss", "Oral yeast infection", "Shingles", "Pneumonia"],
+      "medicines": ["Antiretroviral therapy (ART) - multiple drug combinations - prescription required"],
+      "prevention": ["Use condoms", "Pre-exposure prophylaxis (PrEP)", "Post-exposure prophylaxis (PEP)", "Don't share needles"],
+      "home_care": ["Take medications exactly as prescribed", "Healthy lifestyle", "Regular medical care"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 17,
+      "name": "Chlamydia",
+      "description": "Common sexually transmitted bacterial infection.",
+      "symptoms": ["Often asymptomatic", "Painful urination", "Vaginal/penile discharge", "Pain during sex", "Lower abdominal pain"],
+      "medicines": ["Antibiotics (Azithromycin, Doxycycline) - prescription required"],
+      "prevention": ["Use condoms", "Limit number of sex partners", "Regular screening"],
+      "home_care": ["Complete all medication", "Notify partners", "Abstain from sex during treatment"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 18,
+      "name": "Gonorrhea",
+      "description": "STI that can cause infection in genitals, rectum, throat.",
+      "symptoms": ["Thick/bloody discharge", "Painful urination", "Anal itching", "Bowel pain", "Sore throat"],
+      "medicines": ["Antibiotics (Ceftriaxone, Azithromycin) - prescription required"],
+      "prevention": ["Use condoms", "Mutual monogamy", "Regular screening"],
+      "home_care": ["Complete all medication", "Partner notification", "Follow-up testing"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 19,
+      "name": "Herpes Simplex Virus (HSV)",
+      "description": "Viral infection causing sores around mouth/genitals.",
+      "symptoms": ["Painful blisters/sores", "Itching", "Burning sensation", "Flu-like symptoms"],
+      "medicines": ["Antiviral drugs (Acyclovir, Valacyclovir) - prescription required"],
+      "prevention": ["Use condoms/dental dams", "Avoid sex during outbreaks", "Disclose status to partners"],
+      "home_care": ["Keep sores clean/dry", "Wear loose clothing", "Over-the-counter pain relievers"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 20,
+      "name": "Human Papillomavirus (HPV)",
+      "description": "Very common STI that can cause warts and cancer.",
+      "symptoms": ["Often asymptomatic", "Genital warts", "Common warts", "Plantar warts"],
+      "medicines": ["No cure for virus itself", "Treatments for warts (imiquimod, podofilox) - prescription often required"],
+      "prevention": ["HPV vaccination", "Use condoms", "Regular Pap tests"],
+      "home_care": ["Regular health screenings", "Follow medical advice for abnormal cells"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 21,
+      "name": "Syphilis",
+      "description": "Bacterial STI that progresses in stages.",
+      "symptoms": ["Chancre sores", "Skin rash", "Fever", "Fatigue", "Headache", "Weight loss", "Neurological problems in late stages"],
+      "medicines": ["Antibiotics (Penicillin G) - prescription required"],
+      "prevention": ["Use condoms", "Regular STI testing", "Mutual monogamy"],
+      "home_care": ["Complete all antibiotics", "Partner notification", "Follow-up blood tests"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 22,
+      "name": "Conjunctivitis (Pink Eye)",
+      "description": "Inflammation of the conjunctiva.",
+      "symptoms": ["Redness", "Itchiness", "Gritty feeling", "Discharge", "Tearing", "Crusting of eyelids"],
+      "medicines": ["Antibiotic drops (bacterial) - prescription required", "Antihistamine drops (allergic)"],
+      "prevention": ["Don't touch eyes", "Wash hands frequently", "Don't share towels/makeup"],
+      "home_care": ["Cool/warm compresses", "Artificial tears", "Stop wearing contacts"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 23,
+      "name": "Gastroenteritis (Stomach Flu)",
+      "description": "Intestinal infection causing diarrhea/cramps/nausea.",
+      "symptoms": ["Watery diarrhea", "Abdominal cramps", "Nausea/vomiting", "Fever", "Muscle aches"],
+      "medicines": ["Often no specific medicine", "Anti-diarrheals (Loperamide)", "Antibiotics if bacterial - prescription required"],
+      "prevention": ["Frequent handwashing", "Safe food handling", "Avoid contaminated water"],
+      "home_care": ["Hydration with electrolytes", "BRAT diet (bananas, rice, applesauce, toast)", "Rest", "Avoid dairy/fatty foods"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 24,
+      "name": "Food Poisoning",
+      "description": "Illness from consuming contaminated food.",
+      "symptoms": ["Nausea", "Vomiting", "Watery diarrhea", "Abdominal pain/cramps", "Fever"],
+      "medicines": ["Replacement of fluids/electrolytes", "Antibiotics for specific types - prescription required"],
+      "prevention": ["Cook food thoroughly", "Practice good hygiene", "Proper food storage"],
+      "home_care": ["Stay hydrated", "Rest", "Gradually resume eating bland foods"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 25,
+      "name": "Norovirus",
+      "description": "Highly contagious virus causing vomiting/diarrhea.",
+      "symptoms": ["Nausea", "Vomiting", "Stomach pain/cramps", "Diarrhea", "Fever", "Body aches"],
+      "medicines": ["No specific antiviral. Supportive care for symptoms."],
+      "prevention": ["Thorough handwashing", "Disinfect surfaces", "Avoid preparing food for others when sick"],
+      "home_care": ["Drink plenty of fluids", "Oral rehydration solutions", "Rest", "Eat bland foods as tolerated"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 26,
+      "name": "Appendicitis",
+      "description": "Inflammation of the appendix.",
+      "symptoms": ["Sudden pain near navel shifting to lower right abdomen", "Pain that worsens", "Nausea/vomiting", "Loss of appetite", "Fever", "Abdominal swelling"],
+      "medicines": ["Intravenous antibiotics before surgery - prescription/hospital administered", "Pain relievers"],
+      "prevention": ["No known prevention"],
+      "home_care": ["None. This is a medical emergency requiring immediate care."],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 27,
+      "name": "Cellulitis",
+      "description": "Common bacterial skin infection.",
+      "symptoms": ["Red, swollen area of skin", "Pain/tenderness", "Fever", "Skin dimpling"],
+      "medicines": ["Antibiotics (oral or IV) - prescription required"],
+      "prevention": ["Clean wounds thoroughly", "Moisturize skin", "Treat fungal infections promptly"],
+      "home_care": ["Rest", "Elevate affected area", "Take all antibiotics"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 28,
+      "name": "Athlete's Foot",
+      "description": "Fungal infection on the feet.",
+      "symptoms": ["Itchy, scaly rash", "Stinging/burning", "Blisters", "Cracking/peeling skin"],
+      "medicines": ["Topical antifungal creams (Clotrimazole, Miconazole) - OTC", "Oral antifungals for severe cases - prescription required"],
+      "prevention": ["Keep feet dry", "Change socks", "Wear sandals in public places"],
+      "home_care": ["Use antifungal powder", "Keep feet clean/dry", "Wear breathable shoes"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 29,
+      "name": "Ringworm (Tinea Corporis)",
+      "description": "Fungal infection causing ring-shaped rash.",
+      "symptoms": ["Ring-shaped rash", "Itchy skin", "Clear/ scaly inside rash", "Raised, expanding rings"],
+      "medicines": ["Topical antifungals (OTC)", "Oral antifungals (Griseofulvin) - prescription required"],
+      "prevention": ["Keep skin clean/dry", "Don't share clothing/towels", "Avoid infected animals"],
+      "home_care": ["Apply OTC antifungal cream", "Keep area dry", "Wash bedding/clothes daily"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 30,
+      "name": "Impetigo",
+      "description": "Highly contagious skin infection common in children.",
+      "symptoms": ["Red sores that burst", "Honey-colored crusts", "Itching", "Painless blisters"],
+      "medicines": ["Topical antibiotic (Mupirocin) - prescription required", "Oral antibiotics"],
+      "prevention": ["Good hygiene", "Clean minor wounds", "Avoid contact with sores"],
+      "home_care": ["Gently wash sores", "Apply prescribed ointment", "Cover sores lightly"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 31,
+      "name": "Shingles (Herpes Zoster)",
+      "description": "Painful rash caused by reactivation of chickenpox virus.",
+      "symptoms": ["Pain, burning, tingling", "Red rash", "Fluid-filled blisters", "Itching", "Fever", "Headache"],
+      "medicines": ["Antiviral drugs (Acyclovir, Valacyclovir) - prescription required", "Pain relievers", "Anticonvulsants for nerve pain"],
+      "prevention": ["Shingles vaccine (Shingrix)"],
+      "home_care": ["Cool compresses", "Calamine lotion", "Oatmeal baths", "Rest"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 32,
+      "name": "Chickenpox",
+      "description": "Highly contagious viral illness causing itchy rash.",
+      "symptoms": ["Itchy rash", "Fluid-filled blisters", "Fever", "Fatigue", "Loss of appetite", "Headache"],
+      "medicines": ["No cure. Supportive care.", "Antiviral (Acyclovir) for high-risk - prescription required", "Calamine lotion", "Antihistamines for itching"],
+      "prevention": ["Varicella vaccine"],
+      "home_care": ["Don't scratch", "Oatmeal baths", "Cool compresses", "Trim fingernails"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 33,
+      "name": "Measles",
+      "description": "Highly contagious viral infection.",
+      "symptoms": ["High fever", "Cough", "Runny nose", "Red/watery eyes", "Koplik's spots", "Red rash"],
+      "medicines": ["No specific antiviral. Supportive care.", "Vitamin A supplementation"],
+      "prevention": ["MMR vaccine"],
+      "home_care": ["Rest", "Hydration", "Humidifier", "Fever reducers"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 34,
+      "name": "Mumps",
+      "description": "Viral infection affecting salivary glands.",
+      "symptoms": ["Swollen salivary glands", "Fever", "Headache", "Muscle aches", "Fatigue", "Loss of appetite"],
+      "medicines": ["No specific treatment. Supportive care."],
+      "prevention": ["MMR vaccine"],
+      "home_care": ["Rest", "Soft foods", "Avoid acidic foods", "Warm/cold compresses for swelling"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 35,
+      "name": "Rubella (German Measles)",
+      "description": "Contagious viral infection with red rash.",
+      "symptoms": ["Mild fever", "Headache", "Stuffy nose", "Red eyes", "Swollen lymph nodes", "Pink rash"],
+      "medicines": ["No specific treatment. Supportive care."],
+      "prevention": ["MMR vaccine"],
+      "home_care": ["Rest", "Fever reducers", "Isolate from pregnant women"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 36,
+      "name": "Malaria",
+      "description": "Mosquito-borne disease caused by a parasite.",
+      "symptoms": ["High fever", "Chills", "Headache", "Nausea/vomiting", "Muscle pain", "Fatigue"],
+      "medicines": ["Antimalarial drugs (Chloroquine, Artemisinin-based combination therapy) - prescription required"],
+      "prevention": ["Mosquito avoidance", "Mosquito nets", "Prophylactic medications for travelers"],
+      "home_care": ["Seek immediate medical attention", "Take prescribed drugs exactly as directed"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 37,
+      "name": "Dengue Fever",
+      "description": "Mosquito-borne viral infection.",
+      "symptoms": ["High fever", "Severe headache", "Pain behind eyes", "Joint/muscle pain", "Nausea/vomiting", "Rash"],
+      "medicines": ["No specific treatment. Supportive care.", "Pain relievers (avoid aspirin/NSAIDs)"],
+      "prevention": ["Mosquito bite prevention", "Eliminate mosquito breeding sites"],
+      "home_care": ["Rest", "Hydration", "Fever reducers (Acetaminophen)"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 38,
+      "name": "Lyme Disease",
+      "description": "Tick-borne illness caused by Borrelia bacteria.",
+      "symptoms": ["Bull's-eye rash (EM rash)", "Fever", "Chills", "Fatigue", "Body aches", "Headache", "Swollen lymph nodes"],
+      "medicines": ["Antibiotics (Doxycycline, Amoxicillin) - prescription required"],
+      "prevention": ["Tick repellent", "Check for ticks", "Remove ticks promptly"],
+      "home_care": ["Take all antibiotics", "Rest", "Manage symptoms"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 39,
+      "name": "Tetanus",
+      "description": "Serious bacterial disease causing muscle stiffness.",
+      "symptoms": ["Jaw cramping (lockjaw)", "Muscle stiffness", "Trouble swallowing", "Muscle spasms", "Fever", "High blood pressure"],
+      "medicines": ["Wound care", "Tetanus immune globulin", "Antibiotics", "Muscle relaxants - all require medical care"],
+      "prevention": ["Tetanus vaccine (DTaP, Tdap, Td boosters)"],
+      "home_care": ["None. This is a medical emergency."],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 40,
+      "name": "Whooping Cough (Pertussis)",
+      "description": "Highly contagious respiratory tract infection.",
+      "symptoms": ["Runny nose", "Mild cough", "Apnea in babies", "Rapid coughs ending with whoop", "Vomiting", "Exhaustion"],
+      "medicines": ["Antibiotics (Azithromycin) - prescription required"],
+      "prevention": ["Pertussis vaccine (DTaP, Tdap)"],
+      "home_care": ["Rest", "Small, frequent meals", "Humidifier", "Avoid irritants"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 41,
+      "name": "Meningitis",
+      "description": "Inflammation of membranes around brain/spinal cord.",
+      "symptoms": ["Sudden high fever", "Stiff neck", "Severe headache", "Nausea/vomiting", "Confusion", "Sensitivity to light"],
+      "medicines": ["Urgent antibiotics (bacterial) - IV in hospital", "Antivirals (viral)", "Corticosteroids"],
+      "prevention": ["Vaccinations (Hib, Pneumococcal, Meningococcal)", "Good hygiene"],
+      "home_care": ["None. This is a medical emergency requiring immediate care."],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 42,
+      "name": "Hypertension (High Blood Pressure)",
+      "description": "Long-term force of blood against artery walls is high.",
+      "symptoms": ["Often has no symptoms", "Severe: Headaches, shortness of breath, nosebleeds"],
+      "medicines": ["Thiazide diuretics", "ACE inhibitors", "ARBs", "Calcium channel blockers - all prescription required"],
+      "prevention": ["Healthy diet (low salt)", "Regular exercise", "Maintain healthy weight", "Limit alcohol"],
+      "home_care": ["Monitor BP at home", "Take medications as prescribed", "Reduce stress", "DASH diet"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 43,
+      "name": "Coronary Artery Disease (CAD)",
+      "description": "Plaque buildup in heart's arteries.",
+      "symptoms": ["Chest pain (angina)", "Shortness of breath", "Heart attack", "Fatigue"],
+      "medicines": ["Cholesterol medications (Statins)", "Aspirin", "Beta blockers", "Nitroglycerin - all prescription required"],
+      "prevention": ["Don't smoke", "Control BP/cholesterol", "Healthy diet", "Exercise"],
+      "home_care": ["Cardiac rehab", "Take all medications", "Lifestyle changes"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 44,
+      "name": "Heart Failure",
+      "description": "Heart doesn't pump blood as well as it should.",
+      "symptoms": ["Shortness of breath", "Fatigue", "Swelling in legs/ankles/feet", "Rapid heartbeat", "Reduced ability to exercise"],
+      "medicines": ["ACE inhibitors", "Beta blockers", "Diuretics", "Digoxin - all prescription required"],
+      "prevention": ["Control conditions leading to HF (CAD, HBP, diabetes)", "Healthy lifestyle"],
+      "home_care": ["Daily weight monitoring", "Low-sodium diet", "Fluid restriction", "Take medications exactly as prescribed"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 45,
+      "name": "Heart Attack (Myocardial Infarction)",
+      "description": "Blockage of blood flow to the heart muscle.",
+      "symptoms": ["Chest pressure/pain", "Pain in jaw/neck/back/arm", "Shortness of breath", "Cold sweat", "Nausea", "Lightheadedness"],
+      "medicines": ["Aspirin", "Thrombolytics", "Antiplatelet agents", "Pain relievers", "Nitroglycerin - emergency/ hospital care"],
+      "prevention": ["Same as CAD prevention", "Manage stress"],
+      "home_care": ["None. Call emergency services immediately."],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 46,
+      "name": "Stroke",
+      "description": "Blood supply to part of brain interrupted.",
+      "symptoms": ["Face drooping", "Arm weakness", "Speech difficulty", "Sudden confusion", "Vision problems", "Dizziness", "Severe headache"],
+      "medicines": ["Emergency: tPA (clot-buster)", "Antiplatelets (Aspirin)", "Anticoagulants", "Blood pressure drugs - hospital care"],
+      "prevention": ["Control HBP", "Manage cholesterol", "Don't smoke", "Manage Afib"],
+      "home_care": ["None. This is a medical emergency. Act F.A.S.T. and call ambulance."],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 47,
+      "name": "High Cholesterol (Hyperlipidemia)",
+      "description": "High levels of fats (lipids) in the blood.",
+      "symptoms": ["None. It is a silent condition."],
+      "medicines": ["Statins", "Cholesterol absorption inhibitors", "PCSK9 inhibitors - prescription required"],
+      "prevention": ["Low-saturated-fat diet", "High fiber", "Regular exercise", "Maintain healthy weight"],
+      "home_care": ["Dietary changes", "Exercise", "Take prescribed medications"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 48,
+      "name": "Type 2 Diabetes",
+      "description": "Chronic condition affecting how body processes blood sugar.",
+      "symptoms": ["Increased thirst", "Frequent urination", "Hunger", "Fatigue", "Blurred vision", "Slow-healing sores"],
+      "medicines": ["Metformin", "Sulfonylureas", "Insulin - prescription required"],
+      "prevention": ["Healthy weight", "Exercise", "Healthy diet"],
+      "home_care": ["Blood sugar monitoring", "Carbohydrate counting", "Healthy eating", "Physical activity"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 49,
+      "name": "Type 1 Diabetes",
+      "description": "Autoimmune condition where pancreas produces little/no insulin.",
+      "symptoms": ["Same as Type 2, but often more severe and sudden onset"],
+      "medicines": ["Insulin (via injection or pump) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Frequent blood sugar checks", "Insulin administration", "Carb counting", "Manage during exercise/illness"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 50,
+      "name": "Hypothyroidism",
+      "description": "Underactive thyroid gland.",
+      "symptoms": ["Fatigue", "Weight gain", "Cold intolerance", "Constipation", "Dry skin", "Thinning hair", "Depression"],
+      "medicines": ["Thyroid hormone replacement (Levothyroxine) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Take medication consistently on empty stomach", "Regular blood tests to monitor levels"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 51,
+      "name": "Hyperthyroidism",
+      "description": "Overactive thyroid gland.",
+      "symptoms": ["Weight loss", "Rapid heartbeat", "Nervousness", "Tremors", "Sweating", "Heat intolerance", "Changes in bowel patterns"],
+      "medicines": ["Anti-thyroid medications (Methimazole) - prescription required", "Radioactive iodine", "Beta blockers"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Take medications as directed", "Follow-up with endocrinologist"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 52,
+      "name": "Asthma",
+      "description": "Condition where airways narrow/swell, produce extra mucus.",
+      "symptoms": ["Shortness of breath", "Chest tightness", "Wheezing", "Coughing (especially at night)"],
+      "medicines": ["Long-term control (Inhaled corticosteroids)", "Quick-relief (Short-acting beta agonists like Albuterol) - prescription required"],
+      "prevention": ["Identify and avoid triggers", "Allergy-proof home", "Get flu/pneumonia vaccines"],
+      "home_care": ["Use action plan", "Take controller meds daily", "Use rescue inhaler for attacks", "Monitor breathing"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 53,
+      "name": "Chronic Obstructive Pulmonary Disease (COPD)",
+      "description": "Chronic inflammatory lung disease causing obstructed airflow.",
+      "symptoms": ["Shortness of breath", "Wheezing", "Chest tightness", "Chronic cough with mucus", "Frequent respiratory infections"],
+      "medicines": ["Bronchodilators (Albuterol)", "Inhaled steroids", "Combination inhalers - prescription required", "Oxygen therapy"],
+      "prevention": ["Don't smoke", "Avoid lung irritants"],
+      "home_care": ["Pulmonary rehab", "Oxygen therapy if prescribed", "Pursed-lip breathing", "Avoid pollutants"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 54,
+      "name": "Chronic Kidney Disease (CKD)",
+      "description": "Gradual loss of kidney function over time.",
+      "symptoms": ["Nausea", "Vomiting", "Fatigue", "Swelling", "Changes in urination", "Shortness of breath"],
+      "medicines": ["Medications to control HBP (ACE inhibitors/ARBs)", "Diuretics", "Statins", "Erythropoietin for anemia - prescription required"],
+      "prevention": ["Control diabetes/HBP", "Healthy diet", "Avoid NSAIDs", "Don't smoke"],
+      "home_care": ["Low-sodium diet", "Limit protein/potassium", "Take medications", "Regular checkups"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 55,
+      "name": "Kidney Stones",
+      "description": "Hard deposits of minerals and salts inside kidneys.",
+      "symptoms": ["Severe side/back pain", "Pain radiating to lower abdomen", "Painful urination", "Pink/red/brown urine", "Nausea/vomiting"],
+      "medicines": ["Pain relievers (NSAIDs) - prescription strength often needed", "Alpha blockers to help pass stones - prescription required"],
+      "prevention": ["Drink plenty of water", "Limit sodium/animal protein", "Eat calcium-rich foods"],
+      "home_care": ["Hydration", "Strain urine to catch stone", "Pain management", "Follow doctor's advice"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 56,
+      "name": "Gout",
+      "description": "Form of arthritis characterized by sudden, severe attacks of pain.",
+      "symptoms": ["Intense joint pain (often big toe)", "Lingering discomfort", "Inflammation/redness", "Limited range of motion"],
+      "medicines": ["NSAIDs (Indomethacin)", "Colchicine", "Corticosteroids", "Medications to block uric acid production (Allopurinol) - prescription required"],
+      "prevention": ["Limit alcohol/sugary drinks", "Limit high-purine foods (red meat, organ meat)", "Stay hydrated"],
+      "home_care": ["Rest the joint", "Ice the joint", "Elevate the joint", "Stay hydrated"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 57,
+      "name": "Osteoarthritis",
+      "description": "Most common form of arthritis, wearing down of joint cartilage.",
+      "symptoms": ["Joint pain", "Stiffness", "Tenderness", "Loss of flexibility", "Grating sensation", "Bone spurs"],
+      "medicines": ["Acetaminophen", "NSAIDs (Ibuprofen, Naproxen)", "Duloxetine", "Corticosteroid injections - some prescription required"],
+      "prevention": ["Maintain healthy weight", "Exercise", "Protect joints from injury"],
+      "home_care": ["Exercise (swimming, walking)", "Heat/cold therapy", "Weight management", "Assistive devices"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 58,
+      "name": "Rheumatoid Arthritis (RA)",
+      "description": "Autoimmune disorder where immune system attacks joints.",
+      "symptoms": ["Tender/warm/swollen joints", "Morning stiffness", "Fatigue", "Fever", "Weight loss"],
+      "medicines": ["DMARDs (Methotrexate)", "Biologic agents", "JAK inhibitors", "NSAIDs", "Steroids - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Regular exercise", "Apply heat/cold", "Relaxation techniques", "Assistive devices"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 59,
+      "name": "Osteoporosis",
+      "description": "Bones become weak and brittle.",
+      "symptoms": ["Often no symptoms until fracture occurs", "Back pain", "Loss of height", "Stooped posture"],
+      "medicines": ["Bisphosphonates (Alendronate)", "Monoclonal antibody (Denosumab)", "Hormone-related therapy - prescription required"],
+      "prevention": ["Adequate calcium/vitamin D", "Weight-bearing exercise", "Don't smoke", "Limit alcohol"],
+      "home_care": ["Fall prevention", "Healthy diet", "Take supplements as advised"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 60,
+      "name": "Fibromyalgia",
+      "description": "Disorder characterized by widespread musculoskeletal pain.",
+      "symptoms": ["Widespread pain", "Fatigue", "Cognitive difficulties (fibro fog)", "Headaches", "Sleep problems"],
+      "medicines": ["Pain relievers", "Antidepressants (Duloxetine, Milnacipran)", "Anti-seizure drugs (Pregabalin, Gabapentin) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Stress reduction", "Regular gentle exercise", "Good sleep hygiene", "Pace yourself"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 61,
+      "name": "Chronic Fatigue Syndrome",
+      "description": "Complex disorder characterized by extreme fatigue.",
+      "symptoms": ["Severe fatigue not improved by rest", "Post-exertional malaise", "Sleep problems", "Cognitive impairment", "Dizziness"],
+      "medicines": ["Symptom-focused: Antidepressants, Sleep aids, Pain relievers - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Pacing activity", "Cognitive behavioral therapy (CBT)", "Gentle stretching", "Sleep management"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 62,
+      "name": "Epilepsy",
+      "description": "Central nervous system disorder causing seizures.",
+      "symptoms": ["Temporary confusion", "Staring spell", "Uncontrollable jerking movements", "Loss of consciousness"],
+      "medicines": ["Anti-seizure medications (Levetiracetam, Lamotrigine, Valproic acid) - prescription required"],
+      "prevention": ["No known prevention, but can be managed"],
+      "home_care": ["Take medication consistently", "Get enough sleep", "Manage stress", "Wear medical alert bracelet"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 63,
+      "name": "Alzheimer's Disease",
+      "description": "Progressive neurologic disorder causing brain shrinkage/cell death.",
+      "symptoms": ["Memory loss", "Difficulty planning/problem-solving", "Confusion", "Personality changes", "Difficulty speaking/walking"],
+      "medicines": ["Cholinesterase inhibitors (Donepezil)", "NMDA antagonist (Memantine) - prescription required"],
+      "prevention": ["Heart-healthy diet", "Mental stimulation", "Regular exercise", "Social engagement"],
+      "home_care": ["Routine", "Safety proof home", "Calm environment", "Support for caregivers"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 64,
+      "name": "Parkinson's Disease",
+      "description": "Progressive nervous system disorder affecting movement.",
+      "symptoms": ["Tremor", "Slowed movement (bradykinesia)", "Rigid muscles", "Impaired posture/balance", "Speech changes"],
+      "medicines": ["Carbidopa-levodopa", "Dopamine agonists", "MAO B inhibitors - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Physical therapy", "Exercise", "Healthy diet", "Fall prevention"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 65,
+      "name": "Multiple Sclerosis (MS)",
+      "description": "Disease where immune system eats away protective nerve covering.",
+      "symptoms": ["Numbness/weakness in limbs", "Electric-shock sensations", "Tremor", "Lack of coordination", "Vision problems", "Fatigue"],
+      "medicines": ["Corticosteroids for attacks", "Disease-modifying therapies (Interferon beta, Ocrelizumab) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Physical therapy", "Manage heat sensitivity", "Rest", "Stress management"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 66,
+      "name": "Migraines",
+      "description": "Recurrent headaches often with sensory disturbances.",
+      "symptoms": ["Throbbing pain", "Sensitivity to light/sound", "Nausea/vomiting", "Aura (visual disturbances)"],
+      "medicines": ["Triptans (Sumatriptan)", "Ergots", "Anti-nausea drugs", "Preventive meds (Beta blockers, Anticonvulsants) - prescription required"],
+      "prevention": ["Identify/avoid triggers", "Regular sleep/eating schedule", "Stress management", "Preventive medications"],
+      "home_care": ["Rest in dark, quiet room", "Cold compress", "Hydrate", "Caffeine in small amounts (can help some)"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 67,
+      "name": "Tension Headaches",
+      "description": "Common headache often from muscle contraction.",
+      "symptoms": ["Dull, aching head pain", "Sensation of tightness across forehead", "Tenderness on scalp/neck/shoulders"],
+      "medicines": ["Pain relievers (Aspirin, Ibuprofen, Acetaminophen)", "Preventive meds if chronic (Tricyclic antidepressants) - prescription required"],
+      "prevention": ["Manage stress", "Regular exercise", "Good posture", "Adequate sleep"],
+      "home_care": ["Heat/ice pack", "Massage", "Relaxation techniques", "Over-the-counter pain relievers"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 68,
+      "name": "Anxiety Disorders",
+      "description": "Excessive nervousness, fear, apprehension, and worry.",
+      "symptoms": ["Feeling nervous/restless", "Increased heart rate", "Hyperventilation", "Sweating", "Trembling", "Feeling weak/tired", "Trouble concentrating"],
+      "medicines": ["Antidepressants (SSRIs, SNRIs)", "Benzodiazepines (for short-term use)", "Beta blockers - prescription required"],
+      "prevention": ["Get help early", "Stay active", "Avoid alcohol/drugs", "Reduce caffeine"],
+      "home_care": ["Stress management", "Meditation", "Support groups", "Sleep hygiene", "Regular exercise"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 69,
+      "name": "Depression (Major Depressive Disorder)",
+      "description": "Mood disorder causing persistent feeling of sadness/loss of interest.",
+      "symptoms": ["Sadness/emptiness", "Angry outbursts", "Loss of interest", "Sleep changes", "Fatigue", "Appetite changes", "Feelings of worthlessness", "Thoughts of death/suicide"],
+      "medicines": ["SSRIs (Sertraline, Escitalopram)", "SNRIs", "Atypical antidepressants - prescription required"],
+      "prevention": ["Take steps to control stress", "Reach out to family/friends", "Get treatment at earliest sign", "Maintain treatment plan"],
+      "home_care": ["Stick to treatment plan", "Learn about depression", "Avoid alcohol/drugs", "Take care of yourself (sleep, diet, exercise)"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 70,
+      "name": "Bipolar Disorder",
+      "description": "Disorder associated with mood swings from depressive lows to manic highs.",
+      "symptoms": ["Mania: Euphoria, high energy, reduced need for sleep, recklessness", "Depression: Similar to MDD symptoms"],
+      "medicines": ["Mood stabilizers (Lithium)", "Antipsychotics", "Antidepressants - prescription required, managed by psychiatrist"],
+      "prevention": ["No known prevention, but treatment prevents episodes"],
+      "home_care": ["Strict medication adherence", "Recognize early warning signs", "Avoid drugs/alcohol", "Regular therapy"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 71,
+      "name": "Schizophrenia",
+      "description": "Severe mental disorder affecting reality interpretation.",
+      "symptoms": ["Delusions", "Hallucinations", "Disorganized thinking/speech", "Abnormal motor behavior", "Negative symptoms (lack of emotion)"],
+      "medicines": ["Antipsychotics (Risperidone, Olanzapine) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Strict adherence to medication", "Psychosocial therapy", "Family support/education", "Skills training"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 72,
+      "name": "Autism Spectrum Disorder (ASD)",
+      "description": "Developmental disorder impacting communication/behavior.",
+      "symptoms": ["Social challenges", "Communication difficulties", "Repetitive behaviors", "Fixed interests", "Sensory sensitivities"],
+      "medicines": ["No core medication. Meds may be used for co-occurring symptoms (irritability, ADHD) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Behavioral therapy", "Structured schedules", "Speech/language therapy", "Social skills training", "Parent education"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 73,
+      "name": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+      "description": "Chronic condition including attention difficulty, hyperactivity, impulsivity.",
+      "symptoms": ["Inattention", "Hyperactivity", "Impulsivity", "Disorganization", "Poor time management"],
+      "medicines": ["Stimulants (Methylphenidate, Amphetamines)", "Non-stimulants (Atomoxetine) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Behavioral therapy", "Organization strategies", "Regular routine", "Clear rules/expectations", "Break tasks into steps"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 74,
+      "name": "Irritable Bowel Syndrome (IBS)",
+      "description": "Common disorder affecting large intestine.",
+      "symptoms": ["Abdominal cramping/pain", "Bloating", "Gas", "Diarrhea or constipation (or both)"],
+      "medicines": ["Fiber supplements", "Laxatives", "Anti-diarrheals", "Anticholinergic meds", "SSRIs - some prescription required"],
+      "prevention": ["Manage stress", "Identify food triggers", "Eat high-fiber foods", "Exercise regularly"],
+      "home_care": ["FODMAP diet", "Regular exercise", "Probiotics", "Adequate sleep", "Stress reduction"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 75,
+      "name": "Crohn's Disease",
+      "description": "Type of inflammatory bowel disease (IBD).",
+      "symptoms": ["Diarrhea", "Abdominal pain/cramping", "Blood in stool", "Fatigue", "Weight loss", "Reduced appetite"],
+      "medicines": ["Anti-inflammatory drugs (Mesalamine)", "Corticosteroids", "Immune system suppressors", "Biologics - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Diet modifications", "Nutritional supplements", "Stress management", "Stop smoking"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 76,
+      "name": "Ulcerative Colitis",
+      "description": "IBD causing inflammation/ulcers in digestive tract.",
+      "symptoms": ["Diarrhea (often with blood/pus)", "Abdominal pain/cramping", "Rectal pain/bleeding", "Urgency to defecate", "Weight loss", "Fatigue"],
+      "medicines": ["Anti-inflammatories", "Corticosteroids", "Immunosuppressants", "Biologics - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Diet changes (low-residue during flares)", "Stress reduction", "Small frequent meals", "Nutritional support"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 77,
+      "name": "Celiac Disease",
+      "description": "Immune reaction to eating gluten.",
+      "symptoms": ["Diarrhea", "Fatigue", "Weight loss", "Bloating", "Anemia", "Abdominal pain"],
+      "medicines": ["No specific medication. Strict gluten-free diet is treatment."],
+      "prevention": ["No known prevention"],
+      "home_care": ["Strict lifelong gluten-free diet", "Nutritional counseling", "Vitamin/mineral supplements"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 78,
+      "name": "GERD (Gastroesophageal Reflux Disease)",
+      "description": "Chronic acid reflux.",
+      "symptoms": ["Heartburn", "Regurgitation", "Chest pain", "Difficulty swallowing", "Sensation of a lump in throat"],
+      "medicines": ["Antacids", "H2 receptor blockers (Famotidine)", "Proton pump inhibitors (Omeprazole) - some OTC, some prescription"],
+      "prevention": ["Maintain healthy weight", "Avoid trigger foods", "Eat smaller meals", "Don't lie down after eating"],
+      "home_care": ["Elevate head of bed", "Avoid tight clothing", "Stop smoking", "Chew gum to reduce acid"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 79,
+      "name": "Peptic Ulcers",
+      "description": "Sores that develop on stomach/small intestine lining.",
+      "symptoms": ["Burning stomach pain", "Feeling of fullness", "Bloating", "Heartburn", "Nausea"],
+      "medicines": ["Antibiotics for H. pylori", "PPIs", "H2 blockers", "Antacids - some prescription required"],
+      "prevention": ["Protect against H. pylori (handwashing, safe food)", "Use NSAIDs cautiously"],
+      "home_care": ["Avoid foods that irritate ulcer", "Don't smoke", "Limit alcohol", "Manage stress"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 80,
+      "name": "Cirrhosis",
+      "description": "Late stage of scarring (fibrosis) of the liver.",
+      "symptoms": ["Fatigue", "Easy bruising/bleeding", "Jaundice", "Ascites", "Nausea", "Weight loss", "Itchy skin"],
+      "medicines": ["Medications to slow progression (depending on cause)", "Diuretics for fluid", "Laxatives", "Antibiotics for infections - prescription required"],
+      "prevention": ["Avoid excessive alcohol", "Vaccinate for Hepatitis", "Eat healthy", "Prevent Hepatitis C"],
+      "home_care": ["Stop drinking alcohol", "Low-sodium diet", "Vaccinations", "Regular doctor visits"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 81,
+      "name": "Fatty Liver Disease",
+      "description": "Build-up of fat in liver cells.",
+      "symptoms": ["Often none", "Fatigue", "Pain in upper right abdomen", "Enlarged liver"],
+      "medicines": ["No specific medication. Focus on controlling causes."],
+      "prevention": ["Maintain healthy weight", "Exercise", "Healthy diet", "Limit alcohol"],
+      "home_care": ["Weight loss", "Control diabetes", "Lower cholesterol", "Avoid alcohol"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 82,
+      "name": "Anemia",
+      "description": "Lack of enough healthy red blood cells.",
+      "symptoms": ["Fatigue", "Weakness", "Pale skin", "Shortness of breath", "Dizziness", "Cold hands/feet", "Headache"],
+      "medicines": ["Iron supplements", "Vitamin B12 supplements", "Folic acid supplements", "Medications to increase blood cell production - some prescription required"],
+      "prevention": ["Iron-rich diet", "Vitamin-rich diet", "Treat underlying causes"],
+      "home_care": ["Dietary changes", "Take supplements as directed", "Manage underlying condition"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 83,
+      "name": "Hemophilia",
+      "description": "Disorder where blood doesn't clot normally.",
+      "symptoms": ["Excessive bleeding", "Deep bruises", "Joint pain/swelling", "Blood in urine/stool", "Unexplained nosebleeds"],
+      "medicines": ["Clotting factor concentrates (replacement therapy) - prescription required"],
+      "prevention": ["Genetic counseling"],
+      "home_care": ["Avoid injury", "Regular exercise (safe kinds)", "Avoid blood-thinning medications", "Good dental hygiene"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 84,
+      "name": "Deep Vein Thrombosis (DVT)",
+      "description": "Blood clot forming in a deep vein, usually in the leg.",
+      "symptoms": ["Leg swelling", "Pain in leg (often cramping)", "Red/discolored skin", "Warmth over the area"],
+      "medicines": ["Anticoagulants (blood thinners like Warfarin, Rivaroxaban) - prescription required"],
+      "prevention": ["Move legs on long trips", "Exercise", "Manage weight", "Don't smoke"],
+      "home_care": ["Take blood thinners as prescribed", "Wear compression stockings", "Elevate leg", "Monitor for signs of PE (chest pain)"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 85,
+      "name": "Psoriasis",
+      "description": "Skin disease causing red, itchy scaly patches.",
+      "symptoms": ["Red patches covered with silvery scales", "Dry/cracked skin that may bleed", "Itching/burning/soreness", "Thickened/pitted nails"],
+      "medicines": ["Topical corticosteroids", "Vitamin D analogues", "Retinoids", "Light therapy", "Biologics - prescription required"],
+      "prevention": ["No known prevention, but can reduce flares"],
+      "home_care": ["Daily baths", "Moisturize", "Avoid triggers (stress, infections, skin injury)", "Limited sun exposure"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 86,
+      "name": "Eczema (Atopic Dermatitis)",
+      "description": "Condition that makes skin red and itchy.",
+      "symptoms": ["Itchy skin", "Red to brownish-gray patches", "Small raised bumps", "Thickened/cracked/scaly skin", "Raw/sensitive skin from scratching"],
+      "medicines": ["Corticosteroid creams", "Calcineurin inhibitors", "Antibiotics if infected", "Oral drugs for severe cases - prescription required"],
+      "prevention": ["Moisturize frequently", "Identify/avoid triggers", "Shorter baths/showers", "Use gentle soaps"],
+      "home_care": ["Avoid scratching", "Apply cool compresses", "Bleach bath therapy (diluted)", "Wear cool, smooth-textured clothing"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 87,
+      "name": "Acne Vulgaris",
+      "description": "Skin condition when hair follicles clog with oil/dead skin.",
+      "symptoms": ["Whiteheads", "Blackheads", "Small red tender bumps", "Pimples", "Large painful lumps under skin"],
+      "medicines": ["Topical retinoids", "Topical antibiotics", "Salicylic acid", "Oral antibiotics", "Isotretinoin (Accutane) - some prescription required"],
+      "prevention": ["Gently clean skin", "Use oil-free products", "Avoid greasy cosmetics", "Shower after sweating"],
+      "home_care": ["Don't pick/squeeze blemishes", "Avoid touching face", "Shampoo regularly", "Healthy diet"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 88,
+      "name": "Rosacea",
+      "description": "Common skin condition causing facial redness.",
+      "symptoms": ["Facial redness", "Visible blood vessels", "Swollen red bumps", "Eye problems", "Burning/stinging"],
+      "medicines": ["Topical drugs (Brimonidine, Metronidazole)", "Oral antibiotics", "Isotretinoin for severe cases - prescription required"],
+      "prevention": ["Identify/avoid triggers (spicy food, alcohol, temperature extremes)"],
+      "home_care": ["Use gentle skincare", "Protect skin from sun", "Use green-tinted makeup to counter redness", "Manage stress"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 89,
+      "name": "Hives (Urticaria)",
+      "description": "Skin reaction causing raised, itchy welts.",
+      "symptoms": ["Raised red or skin-colored welts", "Intense itching", "Welts vary in size/shape/location"],
+      "medicines": ["Antihistamines (Loratadine, Cetirizine, Fexofenadine)", "H2 antagonists", "Corticosteroids for severe cases - some prescription required"],
+      "prevention": ["Avoid known triggers (foods, medications, heat, pressure)"],
+      "home_care": ["Cool compresses", "Wear loose, smooth-textured cotton clothing", "Bathe in cool water", "Avoid irritants"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 90,
+      "name": "Lupus (Systemic Lupus Erythematosus)",
+      "description": "Autoimmune disease where body attacks own tissues.",
+      "symptoms": ["Butterfly rash on face", "Fatigue", "Fever", "Joint pain/stiffness", "Skin lesions worsened by sun", "Fingers/toes turning white/blue in cold"],
+      "medicines": ["NSAIDs", "Antimalarial drugs (Hydroxychloroquine)", "Corticosteroids", "Immunosuppressants - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["See doctor regularly", "Get enough rest", "Sun protection", "Regular exercise", "Don't smoke"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 91,
+      "name": "Sleep Apnea",
+      "description": "Potentially serious sleep disorder where breathing stops/starts.",
+      "symptoms": ["Loud snoring", "Gasping for air during sleep", "Episodes of stopped breathing", "Morning headache", "Excessive daytime sleepiness"],
+      "medicines": ["No specific medication. Treatment is devices/therapy."],
+      "prevention": ["Lose weight", "Exercise", "Avoid alcohol/sedatives", "Sleep on side"],
+      "home_care": ["CPAP machine", "Oral appliances", "Treat nasal allergies", "Elevate head of bed"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 92,
+      "name": "Insomnia",
+      "description": "Persistent problems falling/staying asleep.",
+      "symptoms": ["Difficulty falling asleep", "Waking during night", "Waking too early", "Daytime tiredness", "Irritability"],
+      "medicines": ["Sleep aids (Zolpidem, Eszopiclone)", "Benzodiazepines", "Melatonin receptor agonists", "Antidepressants - prescription required"],
+      "prevention": ["Stick to sleep schedule", "Create restful environment", "Limit naps", "Manage stress"],
+      "home_care": ["Cognitive Behavioral Therapy (CBT-I)", "Relaxation techniques", "Avoid caffeine/nicotine", "Don't go to bed hungry/full"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 93,
+      "name": "Obesity",
+      "description": "Complex disorder involving excessive body fat.",
+      "symptoms": ["Excessive body fat", "BMI of 30 or higher", "Difficulty doing physical activities", "Shortness of breath"],
+      "medicines": ["Weight-loss medications (Orlistat, Phentermine-topiramate, Liraglutide) - prescription required"],
+      "prevention": ["Regular exercise", "Healthy diet", "Monitor weight regularly", "Consistent sleep schedule"],
+      "home_care": ["Calorie-controlled diet", "Increased physical activity", "Behavior changes", "Support groups"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 94,
+      "name": "Lung Cancer",
+      "description": "Cancer that begins in the lungs.",
+      "symptoms": ["New cough", "Coughing up blood", "Shortness of breath", "Chest pain", "Hoarseness", "Weight loss", "Bone pain", "Headache"],
+      "medicines": ["Surgery", "Chemotherapy", "Radiation therapy", "Targeted therapy", "Immunotherapy - all require specialized oncologic care"],
+      "prevention": ["Don't smoke", "Avoid secondhand smoke", "Test for radon", "Avoid carcinogens"],
+      "home_care": ["Palliative care", "Nutritional support", "Pain management", "Emotional support"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 95,
+      "name": "Breast Cancer",
+      "description": "Cancer that forms in breast cells.",
+      "symptoms": ["Lump in breast", "Change in breast shape", "Dimpling of skin", "Nipple discharge", "Redness/pitting of skin"],
+      "medicines": ["Surgery", "Radiation", "Chemotherapy", "Hormone therapy", "Targeted therapy - all require specialized oncologic care"],
+      "prevention": ["Breast awareness", "Limit alcohol", "Exercise", "Healthy weight", "Limit postmenopausal hormone therapy"],
+      "home_care": ["Manage side effects of treatment", "Physical activity", "Nutrition", "Support groups"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 96,
+      "name": "Prostate Cancer",
+      "description": "Cancer in the prostate gland in men.",
+      "symptoms": ["Trouble urinating", "Decreased force in stream", "Blood in semen", "Pelvic discomfort", "Bone pain"],
+      "medicines": ["Active surveillance", "Surgery", "Radiation", "Hormone therapy", "Chemotherapy - all require specialized oncologic care"],
+      "prevention": ["Healthy diet", "Exercise", "Maintain healthy weight"],
+      "home_care": ["Manage incontinence", "Manage erectile dysfunction", "Pain management", "Emotional support"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 97,
+      "name": "Colorectal Cancer",
+      "description": "Cancer of the colon or rectum.",
+      "symptoms": ["Change in bowel habits", "Blood in stool", "Persistent abdominal discomfort", "Weakness/fatigue", "Unexplained weight loss"],
+      "medicines": ["Surgery", "Chemotherapy", "Radiation", "Targeted therapy", "Immunotherapy - all require specialized oncologic care"],
+      "prevention": ["Regular screening", "High-fiber diet", "Limit red/processed meats", "Exercise", "Maintain healthy weight", "Limit alcohol"],
+      "home_care": ["Ostomy care if needed", "Nutrition", "Manage side effects", "Support"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 98,
+      "name": "Skin Cancer",
+      "description": "Abnormal growth of skin cells, often on sun-exposed skin.",
+      "symptoms": ["Pearly/waxy bump", "Flat flesh-colored/brown scar-like lesion", "Sore that doesn't heal", "Changing mole"],
+      "medicines": ["Surgery", "Freezing", "Mohs surgery", "Radiation", "Chemotherapy cream - require dermatologic/oncologic care"],
+      "prevention": ["Avoid midday sun", "Wear sunscreen year-round", "Avoid tanning beds", "Examine skin regularly"],
+      "home_care": ["Regular self-skin exams", "Protect skin from UV radiation", "Follow-up with dermatologist"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 99,
+      "name": "Benign Prostatic Hyperplasia (BPH)",
+      "description": "Enlarged prostate gland.",
+      "symptoms": ["Frequent urination", "Urgency", "Weak stream", "Straining", "Feeling bladder isn't empty", "Dribbling"],
+      "medicines": ["Alpha blockers (Tamsulosin)", "5-alpha reductase inhibitors (Finasteride) - prescription required"],
+      "prevention": ["No proven prevention"],
+      "home_care": ["Limit fluids in evening", "Limit caffeine/alcohol", "Double void", "Schedule bathroom trips"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 100,
+      "name": "Erectile Dysfunction (ED)",
+      "description": "Inability to get/maintain an erection firm for sex.",
+      "symptoms": ["Trouble getting an erection", "Trouble keeping an erection", "Reduced sexual desire"],
+      "medicines": ["Phosphodiesterase type 5 inhibitors (Sildenafil, Tadalafil) - prescription required", "Testosterone therapy", "Alprostadil"],
+      "prevention": ["Exercise", "Healthy weight", "Manage stress", "Limit alcohol", "Don't smoke"],
+      "home_care": ["Counseling", "Manage underlying health conditions", "Healthy lifestyle"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 101,
+      "name": "Polycystic Ovary Syndrome (PCOS)",
+      "description": "Hormonal disorder common in women of reproductive age.",
+      "symptoms": ["Irregular periods", "Excess androgen (hirsutism, acne)", "Polycystic ovaries", "Weight gain", "Thinning hair"],
+      "medicines": ["Birth control pills to regulate cycles", "Metformin", "Fertility medications", "Anti-androgen meds - prescription required"],
+      "prevention": ["No known prevention, but early diagnosis/treatment helps"],
+      "home_care": ["Healthy weight", "Low-carb diet", "Exercise", "Hair removal treatments"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 102,
+      "name": "Endometriosis",
+      "description": "Tissue similar to uterine lining grows outside uterus.",
+      "symptoms": ["Painful periods", "Pain with intercourse", "Pain with bowel movements/urination", "Excessive bleeding", "Infertility"],
+      "medicines": ["Pain relievers", "Hormone therapy (birth control, Gn-RH agonists) - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Warm baths", "Heating pad", "Regular exercise"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 103,
+      "name": "Uterine Fibroids",
+      "description": "Noncancerous growths in the uterus.",
+      "symptoms": ["Heavy menstrual bleeding", "Pelvic pain/pressure", "Frequent urination", "Backache", "Pain during sex"],
+      "medicines": ["NSAIDs for pain", "Birth control pills", "GnRH agonists - prescription required"],
+      "prevention": ["No known prevention"],
+      "home_care": ["Heat for cramps", "Iron supplements if anemic", "Healthy weight"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 104,
+      "name": "Menopause",
+      "description": "Time marking end of menstrual cycles.",
+      "symptoms": ["Irregular periods", "Vaginal dryness", "Hot flashes", "Night sweats", "Sleep problems", "Mood changes", "Weight gain"],
+      "medicines": ["Hormone therapy", "Vaginal estrogen", "Antidepressants (for hot flashes) - prescription required"],
+      "prevention": ["Natural process, cannot be prevented"],
+      "home_care": ["Cooling techniques for flashes", "Lubricants for dryness", "Regular exercise", "Healthy diet", "Calcium/Vitamin D"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 105,
+      "name": "Cataracts",
+      "description": "Clouding of the eye's natural lens.",
+      "symptoms": ["Clouded/blurred vision", "Difficulty at night", "Sensitivity to light/glare", "Seeing halos", "Fading colors"],
+      "medicines": ["No medication. Surgery is the only effective treatment."],
+      "prevention": ["Regular eye exams", "Quit smoking", "Manage health problems", "Wear sunglasses", "Healthy diet"],
+      "home_care": ["Use brighter lights", "Anti-glare sunglasses", "Magnifying lenses", "Limit driving at night"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 106,
+      "name": "Glaucoma",
+      "description": "Group of eye conditions damaging optic nerve.",
+      "symptoms": ["Initially none", "Patchy blind spots", "Tunnel vision (advanced)", "Eye pain", "Headache", "Nausea/vomiting (acute)"],
+      "medicines": ["Prescription eye drops (Prostaglandins, Beta blockers)", "Oral medications", "Laser therapy", "Surgery"],
+      "prevention": ["Regular dilated eye exams", "Exercise safely", "Take prescribed eyedrops", "Protect eyes from injury"],
+      "home_care": ["Use eyedrops as prescribed", "Manage other health conditions", "Wear eye protection"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 107,
+      "name": "Macular Degeneration",
+      "description": "Eye disease blurring central vision.",
+      "symptoms": ["Worsening central vision", "Distorted vision", "Blurriness", "Difficulty recognizing faces", "Need for brighter light"],
+      "medicines": ["No cure. For wet AMD: Anti-VEGF injections (Ranibizumab, Aflibercept) - prescription required"],
+      "prevention": ["Regular eye exams", "Don't smoke", "Manage other medical conditions", "AREDS2 supplements"],
+      "home_care": ["Use Amsler grid", "Magnifying devices", "Bright lighting", "Eat leafy greens/fish"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 108,
+      "name": "Tinnitus",
+      "description": "Perception of noise/ringing in the ears.",
+      "symptoms": ["Ringing", "Buzzing", "Roaring", "Clicking", "Hissing"],
+      "medicines": ["No specific drug. Treatment targets underlying cause or reduces perception."],
+      "prevention": ["Use hearing protection", "Turn down volume", "Take care of cardiovascular health"],
+      "home_care": ["White noise machines", "Hearing aids", "Masking devices", "Stress reduction", "Avoid irritants like caffeine"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 109,
+      "name": "Hearing Loss",
+      "description": "Partial or total inability to hear.",
+      "symptoms": ["Muffling of speech", "Difficulty understanding words", "Needing to turn up volume", "Withdrawal from conversations"],
+      "medicines": ["Depends on cause. May include antibiotics for infection, steroids for inflammation - prescription required"],
+      "prevention": ["Protect ears from loud noise", "Get regular hearing tests", "Avoid ototoxic medications", "Prevent cardiovascular disease"],
+      "home_care": ["Face people when they speak", "Ask others to speak clearly", "Consider hearing aids", "Remove earwax blockage safely"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 110,
+      "name": "Carpal Tunnel Syndrome",
+      "description": "Compressed nerve in the wrist causing hand/arm symptoms.",
+      "symptoms": ["Numbness/tingling in thumb/fingers", "Weakness in hand", "Shock-like sensations", "Dropping things"],
+      "medicines": ["NSAIDs", "Corticosteroid injections - prescription required"],
+      "prevention": ["Reduce force/relax grip", "Take frequent breaks", "Improve posture", "Keep hands warm"],
+      "home_care": ["Wrist splinting", "Stretching exercises", "Shake out hands", "Avoid activities that worsen symptoms"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    },
+    {
+      "id": 111,
+      "name": "Plantar Fasciitis",
+      "description": "Inflammation of tissue connecting heel bone to toes.",
+      "symptoms": ["Stabbing pain near heel", "Pain worst with first steps in morning", "Pain after long periods of standing"],
+      "medicines": ["NSAIDs", "Corticosteroid injections - prescription required"],
+      "prevention": ["Maintain healthy weight", "Choose supportive shoes", "Avoid high heels", "Stretch arches/calf muscles"],
+      "home_care": ["Rest", "Ice the area", "Stretching exercises", "Night splints", "Arch supports"],
+      "note": "This information is for suggestions and knowing the disease. Do not use it unless by talking to a professional doctor."
+    }
+  ]
+}
