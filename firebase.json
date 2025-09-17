@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "backend/**",
+      "README.md",
+      "*.bat",
+      "*.exe"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/advanced_frontend.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Docker
+*.log

@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy India - AI Healthcare Assistant</title>
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Healthy India">
+    <link rel="apple-touch-icon" href="WhatsApp Image 2025-09-16 at 9.36.53 PM.jpeg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .header {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-item {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .nav-item:hover, .nav-item.active {
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            color: white;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .logout-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .main-card {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .search-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .search-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .search-subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+        }
+        
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 20px 60px 20px 20px;
+            font-size: 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .search-input:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 20px rgba(76,175,80,0.2);
+        }
+        
+        .suggestions-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .suggestion-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.2s ease;
+        }
+        
+        .suggestion-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .suggestion-item:last-child {
+            border-bottom: none;
+        }
+        
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            border: none;
+            border-radius: 50px;
+            padding: 0 25px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .quick-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .quick-btn {
+            background: rgba(255,255,255,0.8);
+            border: 1px solid #e0e0e0;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .quick-btn:hover {
+            background: #4CAF50;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .result-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .result-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .result-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .confidence-badge {
+            background: #4CAF50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .result-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .section-content {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #4CAF50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error {
+            background: #ffebee;
+            border-left-color: #f44336;
+            color: #c62828;
+        }
+        
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        .about-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .contact-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .contribute-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .section-subtitle {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 16px;
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .contribute-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .contribute-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .contribute-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 0 1rem; }
+            .main-card { padding: 2rem 1.5rem; }
+            .search-title { font-size: 24px; }
+            .search-input { font-size: 16px; padding: 15px 50px 15px 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="WhatsApp Image 2025-09-16 at 9.36.53 PM.jpeg" class="logo" alt="Healthy India Logo">
+            <div>
+                <div class="logo-text">Healthy India</div>
+                <div class="tagline">AI-Powered Healthcare Assistant</div>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a class="nav-item active" onclick="showSection('home')">Home</a>
+            <a class="nav-item" onclick="showSection('about')">About Us</a>
+            <a class="nav-item" onclick="showSection('contact')">Contact</a>
+            <a class="nav-item" onclick="showSection('contribute')">Contribute</a>
+            <div class="user-info" id="userInfo"></div>
+        </nav>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="section active">
+        <div class="container">
+            <div class="main-card">
+                <div class="search-section">
+                    <h1 class="search-title">How can I help you today?</h1>
+                    <p class="search-subtitle">Describe your symptoms or type a condition name</p>
+                    
+                    <div class="search-container">
+                        <input type="text" id="symptoms" class="search-input" 
+                               placeholder="e.g., fever, diet for diabetes, stress management, loneliness"
+                               oninput="showSuggestions(this.value)"
+                               onfocus="showSuggestions(this.value)">
+                        <div id="suggestions" class="suggestions-dropdown"></div>
+                        <button class="search-btn" onclick="getConsultation()">Analyze</button>
+                    </div>
+                    
+                    <div class="quick-actions">
+                        <div class="quick-btn" onclick="quickSearch('covid symptoms')">COVID-19</div>
+                        <div class="quick-btn" onclick="quickSearch('diet for diabetes')">Diet Plan</div>
+                        <div class="quick-btn" onclick="quickSearch('stress management')">Stress Help</div>
+                        <div class="quick-btn" onclick="quickSearch('loneliness')">Mental Health</div>
+                        <div class="quick-btn" onclick="quickSearch('reproductive health')">Women's Health</div>
+                        <div class="quick-btn" onclick="quickSearch('weight loss diet')">Weight Loss</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="section about-section">
+        <div class="container">
+            <h1 class="section-title">About Healthy India</h1>
+            <p class="section-subtitle">Revolutionizing healthcare with AI-powered medical assistance</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Advanced machine learning algorithms trained on comprehensive medical datasets to provide accurate symptom analysis and disease matching.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Comprehensive Database</h3>
+                    <p>Over 111+ medical conditions with detailed information on symptoms, treatments, prevention, and home care recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Medical Expertise</h3>
+                    <p>Information curated from trusted medical sources and validated by healthcare professionals to ensure accuracy and reliability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your health information is processed locally with complete privacy. No personal data is stored or shared with third parties.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Results</h3>
+                    <p>Get immediate health insights and recommendations within seconds, helping you make informed decisions about your health.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Accessible Healthcare</h3>
+                    <p>Making quality healthcare information accessible to everyone, bridging the gap between patients and medical knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="section contact-section">
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+            <p class="section-subtitle">Get in touch with our team for support, feedback, or partnerships</p>
+            
+            <div class="contact-form">
+                <form onsubmit="submitContact(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="features-grid" style="margin-top: 4rem;">
+                <div class="feature-card">
+                    <div class="feature-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>support@healthyindia.ai<br>We respond within 24 hours</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Office Address</h3>
+                    <p>Healthy India Technologies<br>Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Partnerships</h3>
+                    <p>partnerships@healthyindia.ai<br>Collaborate with us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contribute Section -->
+    <div id="contribute" class="section contribute-section">
+        <div class="container">
+            <h1 class="section-title">Contribute to Healthy India</h1>
+            <p class="section-subtitle">Help us improve healthcare accessibility for everyone</p>
+            
+            <div class="contribute-grid">
+                <div class="contribute-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Code Contribution</h3>
+                    <p>Contribute to our open-source codebase on GitHub. Help us improve algorithms, add features, and fix bugs.</p>
+                    <button class="submit-btn" onclick="window.open('https://github.com/healthyindia', '_blank')">View on GitHub</button>
+                </div>
+                <div class="contribute-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Medical Data</h3>
+                    <p>Help us expand our medical database with verified information from trusted medical sources and research.</p>
+                    <button class="submit-btn" onclick="showSection('contact')">Get Involved</button>
+                </div>
+                <div class="contribute-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3>Research Partnership</h3>
+                    <p>Collaborate with us on medical AI research, clinical studies, and healthcare innovation projects.</p>
+                    <button class="submit-btn" onclick="showSection('contact')">Partner With Us</button>
+                </div>
+                <div class="contribute-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Financial Support</h3>
+                    <p>Support our mission to make healthcare accessible. Your donations help us maintain and improve our services.</p>
+                    <button class="submit-btn" onclick="alert('Donation portal coming soon!')">Donate</button>
+                </div>
+                <div class="contribute-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Translation</h3>
+                    <p>Help us make Healthy India available in multiple Indian languages to reach more communities.</p>
+                    <button class="submit-btn" onclick="showSection('contact')">Join Translation</button>
+                </div>
+                <div class="contribute-card">
+                    <div class="feature-icon">📢</div>
+                    <h3>Spread Awareness</h3>
+                    <p>Share Healthy India with your community, social media, and help us reach those who need it most.</p>
+                    <button class="submit-btn" onclick="shareApp()">Share Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>⚠️ This tool provides general health information only. Always consult qualified healthcare professionals for medical advice.</p>
+        <p>© 2024 Healthy India. Powered by Advanced AI Technology.</p>
+    </div>
+
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000';
+        
+        // Search suggestions data
+        const searchSuggestions = [
+            'fever and cough', 'covid symptoms', 'diabetes diet plan', 'weight loss diet',
+            'stress management', 'anxiety help', 'loneliness support', 'depression symptoms',
+            'heart healthy diet', 'high blood pressure', 'chest pain', 'headache relief',
+            'reproductive health', 'menstrual problems', 'pregnancy care', 'sleep problems',
+            'insomnia help', 'fatigue causes', 'stomach pain', 'nausea and vomiting',
+            'skin rash', 'allergic reaction', 'cold and flu', 'sore throat',
+            'back pain', 'joint pain', 'muscle aches', 'breathing problems'
+        ];
+        
+        function showSuggestions(query) {
+            const suggestionsDiv = document.getElementById('suggestions');
+            
+            if (!query.trim()) {
+                suggestionsDiv.style.display = 'none';
+                return;
+            }
+            
+            const filtered = searchSuggestions.filter(suggestion => 
+                suggestion.toLowerCase().includes(query.toLowerCase())
+            ).slice(0, 5);
+            
+            if (filtered.length === 0) {
+                suggestionsDiv.style.display = 'none';
+                return;
+            }
+            
+            suggestionsDiv.innerHTML = filtered.map(suggestion => 
+                `<div class="suggestion-item" onclick="selectSuggestion('${suggestion}')">${suggestion}</div>`
+            ).join('');
+            
+            suggestionsDiv.style.display = 'block';
+        }
+        
+        function selectSuggestion(suggestion) {
+            document.getElementById('symptoms').value = suggestion;
+            document.getElementById('suggestions').style.display = 'none';
+            getConsultation();
+        }
+        
+        // Hide suggestions when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.search-container')) {
+                document.getElementById('suggestions').style.display = 'none';
+            }
+        });
+        
+        function quickSearch(query) {
+            document.getElementById('symptoms').value = query;
+            getConsultation();
+        }
+        
+        async function getConsultation() {
+            const symptomsInput = document.getElementById('symptoms').value.trim();
+            if (!symptomsInput) {
+                alert('Please enter symptoms or condition name');
+                return;
+            }
+            
+            document.getElementById('result').innerHTML = `
+                <div class="result-card loading">
+                    <div class="spinner"></div>
+                    <p>Analyzing your symptoms...</p>
+                </div>
+            `;
+            
+            try {
+                const symptoms = symptomsInput.split(',').map(s => s.trim()).filter(s => s);
+                const response = await fetch(`${API_BASE}/consult`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ symptoms })
+                });
+                
+                const data = await response.json();
+                displayResult(data);
+                
+            } catch (error) {
+                document.getElementById('result').innerHTML = `
+                    <div class="result-card error">
+                        <div class="result-header">
+                            <div class="result-icon">⚠️</div>
+                            <div class="result-title">Connection Error</div>
+                        </div>
+                        <p>Unable to connect to the server. Please make sure the backend is running.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        function displayResult(data) {
+            let resultHtml = '';
+            
+            if (data.source === 'dataset') {
+                const result = data.result;
+                
+                if (result.type === 'diet') {
+                    resultHtml = `
+                        <div class="result-card">
+                            <div class="result-header">
+                                <div class="result-icon">🥗</div>
+                                <div class="result-title">Diet Plan: ${result.condition}</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">✅ Foods to Eat</div>
+                                <div class="section-content">${result.foods_to_eat.join(', ')}</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">❌ Foods to Avoid</div>
+                                <div class="section-content">${result.foods_to_avoid.join(', ')}</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">⏰ Meal Timing</div>
+                                <div class="section-content">${result.meal_timing}</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">💡 Tips</div>
+                                <div class="section-content">${result.tips.join(', ')}</div>
+                            </div>
+                        </div>
+                    `;
+                } else if (result.type === 'mental_health') {
+                    resultHtml = `
+                        <div class="result-card">
+                            <div class="result-header">
+                                <div class="result-icon">🧠</div>
+                                <div class="result-title">Mental Health Support: ${result.condition}</div>
+                            </div>
+                            
+                            ${result.symptoms.length > 0 ? `
+                            <div class="result-section">
+                                <div class="section-title">🔍 Common Symptoms</div>
+                                <div class="section-content">${result.symptoms.join(', ')}</div>
+                            </div>
+                            ` : ''}
+                            
+                            <div class="result-section">
+                                <div class="section-title">🛠️ Coping Strategies</div>
+                                <div class="section-content">${result.coping_strategies.join(', ')}</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">🆘 Immediate Help</div>
+                                <div class="section-content">${result.immediate_help.join(', ')}</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">👨‍⚕️ Professional Help</div>
+                                <div class="section-content">${result.professional_help}</div>
+                            </div>
+                            
+                            ${result.crisis_hotline ? `
+                            <div class="result-section">
+                                <div class="section-title">📞 Crisis Hotline</div>
+                                <div class="section-content">${result.crisis_hotline}</div>
+                            </div>
+                            ` : ''}
+                        </div>
+                    `;
+                } else {
+                    // Regular disease result
+                    const confidence = result.confidence ? Math.round(result.confidence * 100) : 'High';
+                    
+                    resultHtml = `
+                        <div class="result-card">
+                            <div class="result-header">
+                                <div class="result-icon">🏥</div>
+                                <div class="result-title">${result.disease}</div>
+                                <div class="confidence-badge">${confidence}% Match</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">🔍 Symptoms</div>
+                                <div class="section-content">${result.symptoms.join(', ')}</div>
+                            </div>
+                            
+                            <div class="result-section">
+                                <div class="section-title">💊 Treatment</div>
+                                <div class="section-content">${result.medicines.join(', ')}</div>
+                            </div>
+                            
+                            ${result.prevention ? `
+                            <div class="result-section">
+                                <div class="section-title">🛡️ Prevention</div>
+                                <div class="section-content">${result.prevention.join(', ')}</div>
+                            </div>
+                            ` : ''}
+                            
+                            ${result.home_care ? `
+                            <div class="result-section">
+                                <div class="section-title">🏠 Home Care</div>
+                                <div class="section-content">${result.home_care.join(', ')}</div>
+                            </div>
+                            ` : ''}
+                            
+                            <div class="result-section">
+                                <div class="section-title">💡 Medical Advice</div>
+                                <div class="section-content">${result.advice}</div>
+                            </div>
+                        </div>
+                    `;
+                }
+            } else {
+                resultHtml = `
+                    <div class="result-card">
+                        <div class="result-header">
+                            <div class="result-icon">🤖</div>
+                            <div class="result-title">AI Analysis</div>
+                        </div>
+                        <div class="section-content">${data.result.response}</div>
+                    </div>
+                `;
+            }
+            
+            document.getElementById('result').innerHTML = resultHtml;
+        }
+        
+        // Navigation functions
+        function showSection(sectionName) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from nav items
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionName).classList.add('active');
+            
+            // Add active class to clicked nav item
+            event.target.classList.add('active');
+        }
+        
+        // Contact form submission
+        async function submitContact(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const contactData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+            };
+            
+            try {
+                const response = await fetch(`${API_BASE}/contact`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(contactData)
+                });
+                
+                if (response.ok) {
+                    alert('Thank you for your message! We will get back to you soon.');
+                    event.target.reset();
+                } else {
+                    throw new Error('Failed to send message');
+                }
+            } catch (error) {
+                // Fallback: mailto link
+                const subject = encodeURIComponent(`Healthy India Contact: ${contactData.subject}`);
+                const body = encodeURIComponent(`Name: ${contactData.name}\nEmail: ${contactData.email}\n\nMessage:\n${contactData.message}`);
+                window.location.href = `mailto:magadhwalahai@gmail.com?subject=${subject}&body=${body}`;
+            }
+        }
+        
+        // Share function
+        function shareApp() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Healthy India - AI Healthcare Assistant',
+                    text: 'Check out this amazing AI-powered healthcare assistant!',
+                    url: window.location.href
+                });
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copied to clipboard! Share it with others.');
+                });
+            }
+        }
+        
+        // Authentication check
+        function checkAuth() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            const isGuest = localStorage.getItem('isGuest');
+            
+            if (!isLoggedIn && !isGuest) {
+                window.location.href = 'auth.html';
+                return;
+            }
+            
+            // Display user info
+            const userInfo = document.getElementById('userInfo');
+            if (isLoggedIn) {
+                const userName = localStorage.getItem('userName') || 'User';
+                const userEmail = localStorage.getItem('userEmail');
+                userInfo.innerHTML = `
+                    <span>Welcome, ${userName}</span>
+                    <button class="logout-btn" onclick="logout()">Logout</button>
+                `;
+            } else if (isGuest) {
+                userInfo.innerHTML = `
+                    <span>Guest User</span>
+                    <button class="logout-btn" onclick="logout()">Login</button>
+                `;
+            }
+        }
+        
+        function logout() {
+            localStorage.clear();
+            window.location.href = 'auth.html';
+        }
+        
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
+        
+        // Check authentication on page load
+        document.addEventListener('DOMContentLoaded', checkAuth);
+        
+        // Enter key support
+        document.getElementById('symptoms').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('suggestions').style.display = 'none';
+                getConsultation();
+            }
+        });
+    </script>
+</body>
+</html>

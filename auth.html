@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy India - Login</title>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <!-- Google Sign-In -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .auth-container {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .auth-title {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .auth-subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 10px rgba(76,175,80,0.2);
+        }
+        
+        .auth-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+        
+        .auth-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .switch-auth {
+            color: #666;
+            margin-top: 1rem;
+        }
+        
+        .switch-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .switch-link:hover {
+            text-decoration: underline;
+        }
+        
+        .guest-btn {
+            background: transparent;
+            color: #666;
+            border: 2px solid #e0e0e0;
+            margin-top: 1rem;
+        }
+        
+        .guest-btn:hover {
+            background: #f5f5f5;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .social-login {
+            margin: 1.5rem 0;
+        }
+        
+        .social-text {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 14px;
+        }
+        
+        .social-buttons {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .social-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .social-btn.google {
+            background: #db4437;
+            color: white;
+        }
+        
+        .social-btn.facebook {
+            background: #4267B2;
+            color: white;
+        }
+        
+        .social-btn.twitter {
+            background: #000;
+            color: white;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <img src="WhatsApp Image 2025-09-16 at 9.36.53 PM.jpeg" class="logo" alt="Healthy India Logo">
+        
+        <!-- Login Form -->
+        <div id="loginForm">
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-subtitle">Sign in to your Healthy India account</p>
+            
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+            
+            <div class="social-login">
+                <p class="social-text">Or continue with</p>
+                <div class="social-buttons">
+                    <button class="social-btn google" onclick="loginWithGoogle()">Google</button>
+                    <button class="social-btn facebook" onclick="loginWithFacebook()">Facebook</button>
+                    <button class="social-btn twitter" onclick="loginWithTwitter()">X</button>
+                </div>
+            </div>
+            
+            <button class="auth-btn guest-btn" onclick="continueAsGuest()">Continue as Guest</button>
+            
+            <div class="switch-auth">
+                Don't have an account? 
+                <span class="switch-link" onclick="showSignup()">Create Account</span>
+            </div>
+        </div>
+        
+        <!-- Signup Form -->
+        <div id="signupForm" class="hidden">
+            <h1 class="auth-title">Join Healthy India</h1>
+            <p class="auth-subtitle">Create your account to get started</p>
+            
+            <form onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required minlength="6">
+                </div>
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+            
+            <div class="social-login">
+                <p class="social-text">Or sign up with</p>
+                <div class="social-buttons">
+                    <button class="social-btn google" onclick="loginWithGoogle()">Google</button>
+                    <button class="social-btn facebook" onclick="loginWithFacebook()">Facebook</button>
+                    <button class="social-btn twitter" onclick="loginWithTwitter()">X</button>
+                </div>
+            </div>
+            
+            <button class="auth-btn guest-btn" onclick="continueAsGuest()">Continue as Guest</button>
+            
+            <div class="switch-auth">
+                Already have an account? 
+                <span class="switch-link" onclick="showLogin()">Sign In</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAn1cTGyFzkqr-duApDRmqx5pD4-wpLE6E",
+            authDomain: "healthy-india-app.firebaseapp.com",
+            projectId: "healthy-india-app",
+            storageBucket: "healthy-india-app.firebasestorage.app",
+            messagingSenderId: "993491691875",
+            appId: "1:993491691875:web:6915ecd5d2086fb1234b56",
+            measurementId: "G-KJCD3KPS5Z"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        
+        // Google provider
+        const googleProvider = new firebase.auth.GoogleAuthProvider();
+        
+        // Facebook provider
+        const facebookProvider = new firebase.auth.FacebookAuthProvider();
+        
+        // Twitter provider
+        const twitterProvider = new firebase.auth.TwitterAuthProvider();
+        
+        function showSignup() {
+            document.getElementById('loginForm').classList.add('hidden');
+            document.getElementById('signupForm').classList.remove('hidden');
+        }
+        
+        function showLogin() {
+            document.getElementById('signupForm').classList.add('hidden');
+            document.getElementById('loginForm').classList.remove('hidden');
+        }
+        
+        async function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            try {
+                const result = await auth.signInWithEmailAndPassword(email, password);
+                const user = result.user;
+                
+                localStorage.setItem('userName', user.displayName || 'User');
+                localStorage.setItem('userEmail', user.email);
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('loginMethod', 'email');
+                
+                window.location.href = 'advanced_frontend.html';
+            } catch (error) {
+                alert('Login failed: ' + error.message);
+            }
+        }
+        
+        async function handleSignup(event) {
+            event.preventDefault();
+            const name = document.getElementById('signupName').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            try {
+                const result = await auth.createUserWithEmailAndPassword(email, password);
+                const user = result.user;
+                
+                // Update profile with name
+                await user.updateProfile({ displayName: name });
+                
+                localStorage.setItem('userName', name);
+                localStorage.setItem('userEmail', email);
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('loginMethod', 'email');
+                
+                window.location.href = 'advanced_frontend.html';
+            } catch (error) {
+                alert('Signup failed: ' + error.message);
+            }
+        }
+        
+        function continueAsGuest() {
+            localStorage.setItem('isGuest', 'true');
+            window.location.href = 'advanced_frontend.html';
+        }
+        
+        async function loginWithGoogle() {
+            try {
+                const result = await auth.signInWithPopup(googleProvider);
+                const user = result.user;
+                
+                localStorage.setItem('userName', user.displayName);
+                localStorage.setItem('userEmail', user.email);
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('loginMethod', 'google');
+                localStorage.setItem('userPhoto', user.photoURL);
+                
+                window.location.href = 'advanced_frontend.html';
+            } catch (error) {
+                alert('Google login failed: ' + error.message);
+            }
+        }
+        
+        async function loginWithFacebook() {
+            try {
+                const result = await auth.signInWithPopup(facebookProvider);
+                const user = result.user;
+                
+                localStorage.setItem('userName', user.displayName);
+                localStorage.setItem('userEmail', user.email);
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('loginMethod', 'facebook');
+                localStorage.setItem('userPhoto', user.photoURL);
+                
+                window.location.href = 'advanced_frontend.html';
+            } catch (error) {
+                alert('Facebook login failed: ' + error.message);
+            }
+        }
+        
+        async function loginWithTwitter() {
+            try {
+                const result = await auth.signInWithPopup(twitterProvider);
+                const user = result.user;
+                
+                localStorage.setItem('userName', user.displayName);
+                localStorage.setItem('userEmail', user.email);
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('loginMethod', 'twitter');
+                localStorage.setItem('userPhoto', user.photoURL);
+                
+                window.location.href = 'advanced_frontend.html';
+            } catch (error) {
+                alert('X login failed: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+{
+  "healthyDiets": [
+    {
+      "id": 1,
+      "name": "Mediterranean Diet",
+      "category": "Heart Health & Longevity",
+      "description": "Emphasizes fruits, vegetables, whole grains, legumes, nuts, olive oil, and lean protein like fish and poultry.",
+      "focus": ["Heart Health", "Longevity", "Brain Health"],
+      "exampleMeal": "Grilled salmon with a quinoa salad, cherry tomatoes, cucumbers, feta cheese, and a drizzle of olive oil."
+    },
+    {
+      "id": 2,
+      "name": "DASH Diet (Dietary Approaches to Stop Hypertension)",
+      "category": "Heart Health & Longevity",
+      "description": "Designed to combat high blood pressure by reducing sodium and eating a variety of foods rich in nutrients that lower blood pressure.",
+      "focus": ["Blood Pressure", "Heart Health"],
+      "exampleMeal": "Baked chicken breast, steamed broccoli, and a sweet potato."
+    },
+    {
+      "id": 3,
+      "name": "Flexitarian Diet",
+      "category": "Plant-Based",
+      "description": "A primarily vegetarian diet that allows for occasional meat and animal products in moderation.",
+      "focus": ["Weight Management", "Sustainability", "Health"],
+      "exampleMeal": "Black bean burgers on whole-wheat buns with avocado and a side salad."
+    },
+    {
+      "id": 4,
+      "name": "Whole-Foods, Plant-Based Diet",
+      "category": "Plant-Based",
+      "description": "Focuses on minimally processed plant foods: fruits, vegetables, whole grains, legumes, nuts, and seeds.",
+      "focus": ["Heart Health", "Chronic Disease Prevention", "Weight Loss"],
+      "exampleMeal": "A large bowl of lentil soup with whole-grain bread."
+    },
+    {
+      "id": 5,
+      "name": "Vegan Diet",
+      "category": "Plant-Based",
+      "description": "Excludes all animal products, including meat, dairy, eggs, and honey.",
+      "focus": ["Ethics", "Sustainability", "Cholesterol Reduction"],
+      "exampleMeal": "Tofu scramble with spinach, turmeric, and nutritional yeast, served with whole-grain toast."
+    },
+    {
+      "id": 6,
+      "name": "Pescatarian Diet",
+      "category": "Plant-Based",
+      "description": "A vegetarian diet that includes fish and seafood.",
+      "focus": ["Heart Health", "Omega-3 Intake", "Flexibility"],
+      "exampleMeal": "Seared tuna steak with roasted asparagus and brown rice."
+    },
+    {
+      "id": 7,
+      "name": "Nordic Diet",
+      "category": "Regional & Traditional",
+      "description": "Similar to Mediterranean but features foods local to the Nordic countries: berries, root vegetables, fatty fish, oats, and rye.",
+      "focus": ["Heart Health", "Local Eating", "Sustainability"],
+      "exampleMeal": "Baked herring with roasted root vegetables (beets, carrots) and a side of lingonberries."
+    },
+    {
+      "id": 8,
+      "name": "Okinawan Diet",
+      "category": "Regional & Traditional",
+      "description": "Based on the traditional eating patterns of Okinawa, Japan, emphasizing sweet potatoes, green vegetables, and soy.",
+      "focus": ["Longevity", "Calorie Restriction"],
+      "exampleMeal": "Stir-fried bitter melon (goya) with tofu, egg, and served with a small portion of purple sweet potato."
+    },
+    {
+      "id": 9,
+      "name": "Traditional Asian Diet",
+      "category": "Regional & Traditional",
+      "description": "Emphasizes rice, noodles, vegetables, fruits, soy, and fish, with minimal meat and dairy.",
+      "focus": ["Balance", "Chronic Disease Prevention"],
+      "exampleMeal": "Vegetable and tofu stir-fry with brown rice."
+    },
+    {
+      "id": 10,
+      "name": "Intermittent Fasting (16/8 Method)",
+      "category": "Eating Pattern",
+      "description": "Involves cycling between periods of eating and fasting. The 16/8 method has a 16-hour daily fast and an 8-hour eating window.",
+      "focus": ["Weight Management", "Insulin Sensitivity", "Cellular Repair"],
+      "exampleMeal": "Meals are not prescribed, but breaking a fast could be with a balanced meal like chicken and vegetables."
+    },
+    {
+      "id": 11,
+      "name": "Intermittent Fasting (5:2 Diet)",
+      "category": "Eating Pattern",
+      "description": "Involves eating normally for 5 days of the week and restricting calories to 500-600 on the other 2 non-consecutive days.",
+      "focus": ["Weight Loss", "Metabolic Health"],
+      "exampleMeal": "On a fast day: a large salad with grilled chicken breast and a light vinaigrette."
+    },
+    {
+      "id": 12,
+      "name": "Mindful Eating",
+      "category": "Eating Pattern",
+      "description": "Not a diet but a practice of paying full attention to the experience of eating, without distraction.",
+      "focus": ["Portion Control", "Digestion", "Relationship with Food"],
+      "exampleMeal": "Any meal eaten slowly, savoring each bite, and listening to hunger/fullness cues."
+    },
+    {
+      "id": 13,
+      "name": "Intuitive Eating",
+      "category": "Eating Pattern",
+      "description": "A framework that rejects dieting mentality, honors hunger, and makes peace with food.",
+      "focus": ["Psychological Health", "Body Acceptance", "Sustainable Habits"],
+      "exampleMeal": "Choosing foods that both satisfy the body and taste good, without guilt."
+    },
+    {
+      "id": 14,
+      "name": "Volumetrics Diet",
+      "category": "Weight Management",
+      "description": "Focuses on eating foods with high water and fiber content (like fruits and vegetables) to feel full on fewer calories.",
+      "focus": ["Satiety", "Weight Loss"],
+      "exampleMeal": "A large portion of vegetable soup and a salad before a main course."
+    },
+    {
+      "id": 15,
+      "name": "Mayo Clinic Diet",
+      "category": "Weight Management",
+      "description": "A lifestyle program focused on replacing unhealthy habits with healthy ones, using a food pyramid that prioritizes fruits and vegetables.",
+      "focus": ["Weight Loss", "Habit Formation"],
+      "exampleMeal": "A large spinach salad with grilled shrimp, berries, and a light yogurt-based dressing."
+    },
+    {
+      "id": 16,
+      "name": "WW (Weight Watchers)",
+      "category": "Weight Management",
+      "description": "A points-based system where foods are assigned a value based on calories, sugar, saturated fat, and protein.",
+      "focus": ["Weight Loss", "Flexibility", "Community Support"],
+      "exampleMeal": "A zero-point food meal like grilled chicken breast and steamed vegetables."
+    },
+    {
+      "id": 17,
+      "name": "Low-Carb Diet (General)",
+      "category": "Macronutrient Focus",
+      "description": "Restricts carbohydrates found in sugary foods, pasta, and bread. Emphasizes protein, fat, and vegetables.",
+      "focus": ["Weight Loss", "Blood Sugar Control"],
+      "exampleMeal": "Cheese and vegetable omelet with a side of avocado."
+    },
+    {
+      "id": 18,
+      "name": "Ketogenic (Keto) Diet",
+      "category": "Macronutrient Focus",
+      "description": "A very low-carb, high-fat diet that puts the body into a metabolic state called ketosis.",
+      "focus": ["Rapid Weight Loss", "Epilepsy Management", "Blood Sugar Control"],
+      "exampleMeal": "Pan-seared steak with a creamy garlic herb sauce and sautéed kale."
+    },
+    {
+      "id": 19,
+      "name": "Paleo Diet",
+      "category": "Macronutrient Focus",
+      "description": "Focuses on foods presumed to be available to Paleolithic humans: meat, fish, vegetables, fruits, nuts, and seeds. Excludes grains, dairy, and processed foods.",
+      "focus": ["Whole Foods", "Weight Loss", "Reducing Processed Foods"],
+      "exampleMeal": "Leafy green salad topped with grilled chicken, avocado, walnuts, and an olive oil dressing."
+    },
+    {
+      "id": 20,
+      "name": "High-Protein Diet",
+      "category": "Macronutrient Focus",
+      "description": "Prioritizes protein intake to promote satiety, preserve muscle mass, and boost metabolism.",
+      "focus": ["Muscle Growth", "Satiety", "Weight Loss"],
+      "exampleMeal": "Greek yogurt with protein powder, berries, and a sprinkle of almonds."
+    },
+    {
+      "id": 21,
+      "name": "Low-FODMAP Diet",
+      "category": "Medical & Therapeutic",
+      "description": "Temporarily eliminates fermentable carbs to identify triggers for IBS and digestive symptoms.",
+      "focus": ["IBS Management", "Digestive Health"],
+      "exampleMeal": "Grilled chicken with quinoa and carrots (using garlic-infused oil for flavor instead of whole garlic)."
+    },
+    {
+      "id": 22,
+      "name": "Anti-Inflammatory Diet",
+      "category": "Medical & Therapeutic",
+      "description": "Emphasizes foods that reduce inflammation, such as tomatoes, olive oil, green leafy vegetables, nuts, and fatty fish.",
+      "focus": ["Reducing Inflammation", "Arthritis Management", "General Wellness"],
+      "exampleMeal": "Salmon with turmeric and ginger, served with steamed broccoli and a side of blueberries."
+    },
+    {
+      "id": 23,
+      "name": "DASH-Sodium Diet",
+      "category": "Medical & Therapeutic",
+      "description": "A stricter version of the DASH diet with even lower sodium intake for those with significant hypertension.",
+      "focus": ["Severe Hypertension"],
+      "exampleMeal": "Homemade oatmeal with berries and cinnamon (no salt added)."
+    },
+    {
+      "id": 24,
+      "name": "Renal Diet (Kidney-Friendly)",
+      "category": "Medical & Therapeutic",
+      "description": "Restricts sodium, potassium, and phosphorus to reduce strain on the kidneys for those with kidney disease.",
+      "focus": ["Kidney Disease Management"],
+      "exampleMeal": "A controlled portion of white rice with a small serving of unmarinated chicken and green beans."
+    },
+    {
+      "id": 25,
+      "name": "Soft Food Diet",
+      "category": "Medical & Therapeutic",
+      "description": "Consists of foods that are soft and easy to chew and swallow, often used after surgery or for dental issues.",
+      "focus": ["Post-Surgery", "Dysphagia"],
+      "exampleMeal": "Mashed potatoes, pureed butternut squash, and a smoothie."
+    },
+    {
+      "id": 26,
+      "name": "Gluten-Free Diet",
+      "category": "Medical & Therapeutic",
+      "description": "Eliminates the protein gluten, found in wheat, barley, and rye. Essential for those with celiac disease or gluten sensitivity.",
+      "focus": ["Celiac Disease", "Gluten Sensitivity"],
+      "exampleMeal": "A salad with grilled chicken, chickpeas, and a gluten-free vinaigrette."
+    },
+    {
+      "id": 27,
+      "name": "Dairy-Free Diet",
+      "category": "Medical & Therapeutic",
+      "description": "Eliminates milk and milk products, often due to lactose intolerance or a milk allergy.",
+      "focus": ["Lactose Intolerance", "Milk Allergy"],
+      "exampleMeal": "Oat milk smoothie with dairy-free protein powder and fruit."
+    },
+    {
+      "id": 28,
+      "name": "MIND Diet (Mediterranean-DASH Intervention for Neurodegenerative Delay)",
+      "category": "Brain Health",
+      "description": "A hybrid of the Mediterranean and DASH diets, specifically targeting brain health to reduce dementia risk.",
+      "focus": ["Brain Health", "Alzheimer's Prevention"],
+      "exampleMeal": "A large salad with leafy greens, blueberries, and a vinaigrette, alongside a serving of baked fish."
+    },
+    {
+      "id": 29,
+      "name": "Fertility Diet",
+      "category": "Life Stage Specific",
+      "description": "Often emphasizes plant-based proteins, full-fat dairy, and complex carbs, based on research from the Nurses' Health Study.",
+      "focus": ["Improving Fertility"],
+      "exampleMeal": "Whole-milk Greek yogurt with berries and a sprinkle of flax seeds."
+    },
+    {
+      "id": 30,
+      "name": "Primal Diet",
+      "category": "Macronutrient Focus",
+      "description": "Similar to Paleo but includes high-quality full-fat dairy and allows for coffee and dark chocolate in moderation.",
+      "focus": ["Whole Foods", "Sustainable Eating"],
+      "exampleMeal": "Omelet cooked in butter with vegetables and cheese, served with a side of berries."
+    },
+    {
+      "id": 31,
+      "name": "Carnivore Diet",
+      "category": "Macronutrient Focus",
+      "description": "An all-meat diet, consisting solely of animal products like meat, fish, eggs, and limited dairy.",
+      "focus": ["Elimination Diet", "Controversial/Experimental"],
+      "exampleMeal": "Ribeye steak and scrambled eggs."
+    },
+    {
+      "id": 32,
+      "name": "Zone Diet",
+      "category": "Macronutrient Focus",
+      "description": "Aims for a specific ratio of macronutrients: 40% carbs, 30% protein, 30% fat at every meal to control inflammation.",
+      "focus": ["Hormonal Balance", "Weight Loss"],
+      "exampleMeal": "A precisely measured plate with 3oz chicken, a large apple, and a small handful of almonds."
+    },
+    {
+      "id": 33,
+      "name": "Alkaline Diet",
+      "category": "Alternative & Lifestyle",
+      "description": "Based on the idea that replacing acid-forming foods with alkaline foods can improve health. Focuses on fruits, vegetables, and nuts.",
+      "focus": ["pH Balance (theorized)", "Overall Health"],
+      "exampleMeal": "A large green smoothie made with spinach, kale, cucumber, and almond milk."
+    },
+    {
+      "id": 34,
+      "name": "Macrobiotic Diet",
+      "category": "Alternative & Lifestyle",
+      "description": "A philosophy-based diet that emphasizes whole grains, vegetables, and fermented foods, while minimizing processed foods and animal products.",
+      "focus": ["Balance", "Spirituality", "Simplicity"],
+      "exampleMeal": "A bowl of brown rice miso soup with sea vegetables and steamed daikon."
+    },
+    {
+      "id": 35,
+      "name": "Raw Food Diet",
+      "category": "Alternative & Lifestyle",
+      "description": "Consists of uncooked, unprocessed foods, often organic. Believed to preserve enzymes and nutrients lost in cooking.",
+      "focus": ["Nutrient Preservation", "Digestive Enzymes"],
+      "exampleMeal": "Zucchini noodles with a raw pesto sauce made from basil, pine nuts, and olive oil."
+    },
+    {
+      "id": 36,
+      "name": "The Engine 2 Diet",
+      "category": "Plant-Based",
+      "description": "A strict, whole-food, plant-based diet that excludes all animal products, added oils, and refined foods.",
+      "focus": ["Heart Health", "Cholesterol Reduction"],
+      "exampleMeal": "Oil-free sweet potato and black bean tacos with corn tortillas and fresh salsa."
+    },
+    {
+      "id": 37,
+      "name": "The Pegan Diet (Paleo-Vegan)",
+      "category": "Hybrid",
+      "description": "A combination of Paleo and Vegan principles, focusing on plants and high-quality meats while avoiding dairy, grains, and processed foods.",
+      "focus": ["Low Glycemic Impact", "Reducing Inflammation"],
+      "exampleMeal": "A large salad with mixed greens, roasted vegetables, avocado, and a small portion of grilled salmon."
+    },
+    {
+      "id": 38,
+      "name": "The Blood Type Diet",
+      "category": "Alternative & Lifestyle",
+      "description": "Suggests that a person's blood type should determine their dietary choices. (Note: Lacks strong scientific evidence).",
+      "focus": ["Individualized Nutrition (theorized)"],
+      "exampleMeal": "Varies significantly by blood type (e.g., Type O: lean meat and vegetables; Type A: plant-based)."
+    },
+    {
+      "id": 39,
+      "name": "The GAPS Diet (Gut and Psychology Syndrome)",
+      "category": "Medical & Therapeutic",
+      "description": "An elimination diet designed to heal the gut lining, focusing on bone broth, probiotics, and easily digestible foods.",
+      "focus": ["Gut Health", "Autism/ADHD (theorized)"],
+      "exampleMeal": "Homemade bone broth with well-cooked vegetables and boiled meat."
+    },
+    {
+      "id": 40,
+      "name": "The Sirtfood Diet",
+      "category": "Weight Management",
+      "description": "Focuses on foods rich in sirtuins, a group of proteins believed to regulate metabolism. Involves initial calorie restriction followed by a maintenance phase.",
+      "focus": ["Weight Loss", "Metabolism"],
+      "exampleMeal": "A green juice made with kale, arugula, parsley, green apple, and matcha powder, alongside a meal featuring buckwheat."
+    },
+    {
+      "id": 41,
+      "name": "The TLC Diet (Therapeutic Lifestyle Changes)",
+      "category": "Heart Health & Longevity",
+      "description": "A plan from the National Institutes of Health to cut cholesterol through diet, exercise, and weight loss.",
+      "focus": ["Cholesterol Reduction"],
+      "exampleMeal": "Oatmeal with strawberries and a plant sterol-fortified milk alternative."
+    },
+    {
+      "id": 42,
+      "name": "The Ornish Diet",
+      "category": "Heart Health & Longevity",
+      "description": "A very low-fat, predominantly vegetarian diet designed to reverse heart disease.",
+      "focus": ["Heart Disease Reversal"],
+      "exampleMeal": "A large bowl of vegetable and bean soup with a whole-grain roll."
+    },
+    {
+      "id": 43,
+      "name": "The Ayurvedic Diet",
+      "category": "Alternative & Lifestyle",
+      "description": "An ancient Indian system that tailors food choices to one's dosha (body type: Vata, Pitta, Kapha) to achieve balance.",
+      "focus": ["Balance", "Digestion", "Holistic Health"],
+      "exampleMeal": "Varies by dosha (e.g., Kapha: spicy lentil soup; Pitta: cooling cucumber salad)."
+    },
+    {
+      "id": 44,
+      "name": "The DNA Diet",
+      "category": "Emerging Trend",
+      "description": "An emerging field of nutrigenomics where dietary recommendations are based on an individual's genetic profile.",
+      "focus": ["Personalized Nutrition"],
+      "exampleMeal": "Highly personalized (e.g., someone with a gene variant for slow caffeine metabolism would be advised to avoid coffee)."
+    },
+    {
+      "id": 45,
+      "name": "The Climarian Diet",
+      "category": "Lifestyle & Ethical",
+      "description": "A diet focused on reducing one's carbon footprint and environmental impact by choosing sustainable foods.",
+      "focus": ["Sustainability", "Climate Change"],
+      "exampleMeal": "A lentil and vegetable stew made with locally sourced, seasonal produce."
+    },
+    {
+      "id": 46,
+      "name": "The No-White-Foods Diet",
+      "category": "Simplified Approach",
+      "description": "A simple rule-based approach that eliminates refined 'white' foods like white bread, white rice, white pasta, and sugar.",
+      "focus": ["Reducing Refined Carbs", "Simplicity"],
+      "exampleMeal": "Quinoa bowl with black beans, corn, salsa, and grilled chicken."
+    },
+    {
+      "id": 47,
+      "name": "The Dukan Diet",
+      "category": "Weight Management",
+      "description": "A high-protein, low-carb diet divided into four phases: attack, cruise, consolidation, and stabilization.",
+      "focus": ["Rapid Weight Loss"],
+      "exampleMeal": "During the 'Attack' phase: lean steak and non-fat yogurt."
+    },
+    {
+      "id": 48,
+      "name": "The South Beach Diet",
+      "category": "Weight Management",
+      "description": "Focuses on replacing bad carbs and fats with good carbs and fats. Has phases to promote rapid weight loss and maintenance.",
+      "focus": ["Heart Health", "Weight Loss"],
+      "exampleMeal": "Phase 1: grilled vegetables and lean steak."
+    },
+    {
+      "id": 49,
+      "name": "The Acid Reflux Diet",
+      "category": "Medical & Therapeutic",
+      "description": "Avoids common trigger foods like spicy foods, citrus, tomatoes, chocolate, mint, and fried foods.",
+      "focus": ["GERD Management", "Digestive Comfort"],
+      "exampleMeal": "Oatmeal with bananas and almond milk."
+    },
+    {
+      "id": 50,
+      "name": "The Anti-Candida Diet",
+      "category": "Medical & Therapeutic",
+      "description": "A strict diet that eliminates sugar, gluten, alcohol, and some dairy to prevent the overgrowth of Candida yeast.",
+      "focus": ["Yeast Overgrowth Management"],
+      "exampleMeal": "Steamed broccoli and chicken sautéed in coconut oil."
+    }
+  ]
+}

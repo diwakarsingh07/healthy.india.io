@@ -1,0 +1,495 @@
+{
+  "healthAdviceDataset": {
+    "metadata": {
+      "title": "Clinically Verified Health & Wellness Advice",
+      "version": "1.0",
+      "description": "A collection of evidence-based strategies for stress management, improving sleep, enhancing happiness, and maintaining reproductive health. Information is synthesized from clinical guidelines and public health recommendations.",
+      "disclaimer": "This information is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition."
+    },
+    "stressManagement": {
+      "categoryDescription": "Strategies proven to reduce the physiological and psychological impact of stress, often rooted in Cognitive Behavioral Therapy (CBT), Mindfulness-Based Stress Reduction (MBSR), and other evidence-based practices.",
+      "advice": [
+        {
+          "id": "SM-01",
+          "title": "Practice Diaphragmatic (Belly) Breathing",
+          "evidenceLevel": "High",
+          "description": "Activates the parasympathetic nervous system (the 'rest-and-digest' system), slowing the heart rate and lowering blood pressure. Counteracts the body's stress response.",
+          "actionableSteps": [
+            "Lie down or sit comfortably with one hand on your chest and the other on your belly.",
+            "Inhale slowly through your nose for a count of 4, feeling your belly rise. Your chest should remain relatively still.",
+            "Hold your breath for a count of 4.",
+            "Exhale slowly through your mouth for a count of 6, feeling your belly fall.",
+            "Repeat for 5-10 cycles, focusing solely on the breath."
+          ],
+          "clinicalNotes": "A core component of many therapeutic protocols for anxiety and panic disorders."
+        },
+        {
+          "id": "SM-02",
+          "title": "Progressive Muscle Relaxation (PMR)",
+          "evidenceLevel": "High",
+          "description": "Systematically tenses and relaxes different muscle groups to reduce physical tension and mental anxiety.",
+          "actionableSteps": [
+            "Find a quiet place. Starting with your feet, tense the muscles as tightly as you can for 5 seconds.",
+            "Notice the sensation of tension.",
+            "Quickly relax the muscles for 30 seconds, noticing the difference in feeling.",
+            "Move progressively upward to your calves, thighs, abdomen, hands, arms, shoulders, neck, and face."
+          ],
+          "clinicalNotes": "Proven effective for reducing symptoms of generalized anxiety, insomnia, and chronic pain."
+        },
+        {
+          "id": "SM-03",
+          "title": "Mindfulness Meditation",
+          "evidenceLevel": "High",
+          "description": "The practice of paying attention to the present moment non-judgmentally. It reduces activity in the amygdala (the brain's fear center) and increases connectivity to the prefrontal cortex (involved in planning and regulation).",
+          "actionableSteps": [
+            "Dedicate 10-20 minutes per day. Sit in a comfortable, alert posture.",
+            "Focus your attention on the physical sensation of your breath.",
+            "When your mind wanders (which it will), gently return your focus to your breath without criticizing yourself.",
+            "Apps like 'Calm' or 'Headspace' provide guided introductions."
+          ],
+          "clinicalNotes": "The basis for Mindfulness-Based Stress Reduction (MBSR), which has extensive clinical support for reducing stress, anxiety, and depression."
+        },
+        {
+          "id": "SM-04",
+          "title": "Cognitive Restructuring (CBT Technique)",
+          "evidenceLevel": "High",
+          "description": "Identifies and challenges negative, distorted thought patterns (cognitive distortions) that contribute to stress and replace them with more balanced, realistic thoughts.",
+          "actionableSteps": [
+            "Identify the stressful situation and the automatic negative thought (e.g., 'I completely failed that presentation').",
+            "Examine the evidence for and against this thought.",
+            "Challenge the distortion (e.g., 'Is it true I *completely* failed? I covered all the main points, and some people asked questions.').",
+            "Develop a more balanced thought (e.g., 'Some parts could have been smoother, but overall, it was adequate and informative.')."
+          ],
+          "clinicalNotes": "A cornerstone of Cognitive Behavioral Therapy, one of the most effective evidence-based treatments for anxiety and mood disorders."
+        },
+        {
+          "id": "SM-05",
+          "title": "Regular Moderate Aerobic Exercise",
+          "evidenceLevel": "High",
+          "description": "Exercise reduces levels of the body's stress hormones (e.g., adrenaline, cortisol) and stimulates the production of endorphins, natural painkillers, and mood elevators.",
+          "actionableSteps": [
+            "Aim for at least 150 minutes of moderate-intensity exercise (e.g., brisk walking, cycling, swimming) per week.",
+            "Even a single 20-30 minute session can provide immediate relief from heightened stress."
+          ],
+          "clinicalNotes": "Consistent exercise is as effective as medication for mild to moderate depression and anxiety for many individuals."
+        },
+        {
+          "id": "SM-06",
+          "title": "Prioritize Social Connection",
+          "evidenceLevel": "High",
+          "description": "Social support acts as a buffer against stress. Positive social interaction triggers the release of oxytocin, which reduces anxiety and promotes a sense of calm.",
+          "actionableSteps": [
+            "Schedule regular time with family and friends.",
+            "Engage in meaningful conversation, not just small talk.",
+            "Join a club, group, or community based on a shared interest.",
+            "Ask for help when you need it; allowing others to support you strengthens bonds."
+          ],
+          "clinicalNotes": "Loneliness and social isolation are major risk factors for stress-related health problems, on par with smoking and obesity."
+        },
+        {
+          "id": "SM-07",
+          "title": "Time Management and Prioritization",
+          "evidenceLevel": "Medium",
+          "description": "Reduces stress by creating a sense of control and reducing the cognitive load of trying to remember tasks and deadlines.",
+          "actionableSteps": [
+            "Use a planner or digital calendar. Make to-do lists.",
+            "Prioritize tasks using a system like the Eisenhower Matrix (Urgent/Important).",
+            "Break large, overwhelming projects into small, manageable steps.",
+            "Learn to say 'no' to non-essential tasks that would overextend you."
+          ],
+          "clinicalNotes": "Effective for reducing work-related stress and feelings of being overwhelmed."
+        },
+        {
+          "id": "SM-08",
+          "title": "Limit News and Social Media Consumption",
+          "evidenceLevel": "Medium",
+          "description": "Constant exposure to negative and alarming news cycles can trigger the body's stress response and lead to feelings of anxiety and helplessness.",
+          "actionableSteps": [
+            "Designate specific times to check the news (e.g., once in the morning, once in the evening) for a limited duration.",
+            "Curate your social media feeds to unfollow accounts that cause stress or negative self-comparison.",
+            "Turn off non-essential notifications on your devices."
+          ],
+          "clinicalNotes": "Digital wellness is a growing field in clinical psychology to address modern sources of anxiety."
+        },
+        {
+          "id": "SM-09",
+          "title": "Spend Time in Nature (Forest Bathing)",
+          "evidenceLevel": "Medium",
+          "description": "Spending time in green spaces has been shown to lower cortisol levels, heart rate, and blood pressure. It can also reduce rumination (repetitive negative thinking).",
+          "actionableSteps": [
+            "Aim for at least 120 minutes per week in nature, which can be broken into smaller chunks.",
+            "Practice 'Shinrin-yoku' or 'forest bathing': be present in the natural environment, engaging all your senses slowly and intentionally."
+          ],
+          "clinicalNotes": "Studies show that access to parks and green spaces is correlated with improved mental health outcomes in urban populations."
+        },
+        {
+          "id": "SM-10",
+          "title": "Practice Gratitude",
+          "evidenceLevel": "Medium",
+          "description": "Consciously focusing on things you are thankful for shifts attention away from stressors and negative emotions, fostering positive feelings and resilience.",
+          "actionableSteps": [
+            "Keep a gratitude journal. Each day, write down three specific things you are grateful for.",
+            "Write a thank-you note to someone in your life and deliver it or read it to them."
+          ],
+          "clinicalNotes": "Gratitude practices are a key intervention in Positive Psychology and are linked to improved sleep, mood, and immune function."
+        }
+      ]
+    },
+    "sleepHygiene": {
+      "categoryDescription": "Behaviors and environmental recommendations proven to promote regular, restful sleep and combat insomnia. These are first-line recommendations in sleep medicine.",
+      "advice": [
+        {
+          "id": "SH-01",
+          "title": "Maintain a Consistent Sleep Schedule",
+          "evidenceLevel": "High",
+          "description": "Regulates your body's internal clock (circadian rhythm), making it easier to fall asleep and wake up naturally.",
+          "actionableSteps": [
+            "Go to bed and wake up at the same time every day, even on weekends.",
+            "Variance should be no more than one hour.",
+            "Consistency is more important than the specific hours chosen."
+          ],
+          "clinicalNotes": "The single most important piece of sleep hygiene advice for stabilizing circadian rhythms."
+        },
+        {
+          "id": "SH-02",
+          "title": "Create a Restful Environment",
+          "evidenceLevel": "High",
+          "description": "Optimizes your bedroom to be a cue for sleep by making it dark, quiet, and cool.",
+          "actionableSteps": [
+            "Keep the room temperature cool (around 65°F or 18°C).",
+            "Use blackout curtains, an eye mask, or a white noise machine to block light and sound.",
+            "Reserve your bed only for sleep and sex. Avoid working, eating, or watching TV in bed."
+          ],
+          "clinicalNotes": "A dark environment is critical for the natural production of melatonin, the sleep hormone."
+        },
+        {
+          "id": "SH-03",
+          "title": "Limit Exposure to Blue Light Before Bed",
+          "evidenceLevel": "High",
+          "description": "Blue light from screens (phones, tablets, computers, TVs) suppresses melatonin production and delays sleep onset.",
+          "actionableSteps": [
+            "Avoid screens for at least 60 minutes before your target bedtime.",
+            "If you must use a device, enable 'night mode' or 'blue light filter' settings in the evening.",
+            "Consider using apps that automatically reduce blue light emission after sunset."
+          ],
+          "clinicalNotes": "Multiple studies confirm that screen use before bed is significantly associated with reduced sleep quality and quantity."
+        },
+        {
+          "id": "SH-04",
+          "title": "Be Cautious with Caffeine and Nicotine",
+          "evidenceLevel": "High",
+          "description": "Both are stimulants that can disrupt sleep. Caffeine has a long half-life and can remain in your system for many hours.",
+          "actionableSteps": [
+            "Avoid caffeine (coffee, tea, soda, chocolate) for at least 6-8 hours before bedtime.",
+            "Quit smoking. If you smoke, avoid nicotine for at least 4 hours before bed, as it is also a stimulant."
+          ],
+          "clinicalNotes": "Caffeine can not only make it hard to fall asleep but also reduce the amount of deep, restorative sleep."
+        },
+        {
+          "id": "SH-05",
+          "title": "Avoid Alcohol Before Bed",
+          "evidenceLevel": "High",
+          "description": "While alcohol may help you fall asleep initially, it disrupts the sleep cycle later in the night, leading to fragmented, non-restorative sleep and reducing REM sleep.",
+          "actionableSteps": [
+            "Avoid alcohol for at least 3-4 hours before going to bed."
+          ],
+          "clinicalNotes": "Alcohol is a common but poor self-medication for insomnia, as it significantly worsens sleep architecture."
+        },
+        {
+          "id": "SH-06",
+          "title": "Establish a Relaxing Pre-Sleep Routine",
+          "evidenceLevel": "Medium",
+          "description": "A consistent routine signals to your brain that it is time to wind down and transition from wakefulness to sleep.",
+          "actionableSteps": [
+            "Begin 30-60 minutes before bed.",
+            "Activities can include: reading a physical book (not a screen), taking a warm bath, listening to calming music, practicing light stretching, or meditation."
+          ],
+          "clinicalNotes": "This is a core component of CBT for Insomnia (CBT-I), the gold-standard non-pharmacological treatment."
+        },
+        {
+          "id": "SH-07",
+          "title": "Don't Lie in Bed Awake",
+          "evidenceLevel": "High",
+          "description": "Lying in bed for extended periods while awake can create an unhealthy association between your bed and wakefulness, leading to psychophysiological insomnia.",
+          "actionableSteps": [
+            "If you haven't fallen asleep after 20 minutes, get out of bed.",
+            "Go to another room and do a quiet, relaxing activity (e.g., read, listen to soft music) until you feel sleepy.",
+            "Return to bed only when you feel drowsy. Repeat as necessary."
+          ],
+          "clinicalNotes": "This is called 'Stimulus Control Therapy' and is one of the most effective techniques in CBT-I."
+        },
+        {
+          "id": "SH-08",
+          "title": "Get Morning Sunlight Exposure",
+          "evidenceLevel": "High",
+          "description": "Exposure to natural light, especially in the morning, helps regulate your circadian rhythm by suppressing melatonin and reinforcing your body's wake-up signal.",
+          "actionableSteps": [
+            "Within an hour of waking, spend 15-30 minutes outside in natural light.",
+            "If outdoors isn't possible, sit by a bright window."
+          ],
+          "clinicalNotes": "Crucial for shift workers and those with Delayed Sleep Phase Syndrome to help reset their internal clock."
+        },
+        {
+          "id": "SH-09",
+          "title": "Exercise Regularly (But Not Too Late)",
+          "evidenceLevel": "High",
+          "description": "Regular exercise can deepen sleep and reduce sleep onset time. However, exercising too close to bedtime can be overstimulating for some people.",
+          "actionableSteps": [
+            "Engage in moderate to vigorous exercise most days of the week.",
+            "Finish intense workouts at least 2-3 hours before bedtime. Gentle evening stretching or yoga is usually fine."
+          ],
+          "clinicalNotes": "The sleep benefits of regular exercise are profound and well-documented, even if timing recommendations can vary slightly by individual."
+        },
+        {
+          "id": "SH-10",
+          "title": "Manage Worries Before Bed",
+          "evidenceLevel": "Medium",
+          "description": "A racing mind is a common barrier to sleep. Getting worries out of your head and onto paper can reduce their intensity.",
+          "actionableSteps": [
+            "Earlier in the evening, practice 'constructive worry': write down your concerns and a possible next step or solution for each.",
+            "Keep a notepad by your bed to jot down any last-minute thoughts that pop up, 'parking' them for the next day."
+          ],
+          "clinicalNotes": "This technique is used to address the cognitive arousal that is a hallmark of insomnia."
+        }
+      ]
+    },
+    "happyLife": {
+      "categoryDescription": "Practices derived from the field of Positive Psychology, which is the scientific study of what makes life most worth living. These interventions are empirically validated to increase well-being and life satisfaction.",
+      "advice": [
+        {
+          "id": "HL-01",
+          "title": "Cultivate Strong Social Relationships",
+          "evidenceLevel": "High",
+          "description": "The Harvard Study of Adult Development, one of the longest studies on happiness, found that strong social connections are the single biggest predictor of happiness and health across lifetimes.",
+          "actionableSteps": [
+            "Invest time and energy in building and maintaining close friendships and family ties.",
+            "Prioritize face-to-face interaction over digital communication.",
+            "Be a good listener and show genuine interest in others."
+          ],
+          "clinicalNotes": "Loneliness is a significant predictor of poor health outcomes and mortality. Social connectedness is a protective factor."
+        },
+        {
+          "id": "HL-02",
+          "title": "Engage in Acts of Kindness and Altruism",
+          "evidenceLevel": "High",
+          "description": "Helping others triggers the brain's reward centers (the 'helper's high'), releasing endorphins and boosting mood. It also shifts focus away from one's own problems.",
+          "actionableSteps": [
+            "Perform small, random acts of kindness regularly (e.g., pay for a coffee for the person behind you, give a genuine compliment).",
+            "Volunteer for a cause you care about on a regular basis."
+          ],
+          "clinicalNotes": "Prosocial behavior is strongly linked to increased well-being, meaning, and social connectedness."
+        },
+        {
+          "id": "HL-03",
+          "title": "Practice Savoring",
+          "evidenceLevel": "Medium",
+          "description": "The art of intentionally focusing your attention on the positive experience to intensify and prolong the enjoyment of positive events and emotions.",
+          "actionableSteps": [
+            "When a positive event occurs, pause to fully absorb it. Notice the sights, sounds, smells, and feelings.",
+            "Share the experience with someone else to deepen it.",
+            "Keep a 'savoring journal' where you record positive experiences in detail."
+          ],
+          "clinicalNotes": "Savoring is an effective counter to hedonic adaptation—the tendency to quickly return to a baseline level of happiness after positive events."
+        },
+        {
+          "id": "HL-04",
+          "title": "Find and Use Your Character Strengths",
+          "evidenceLevel": "Medium",
+          "description": "Positive Psychology identifies 24 universal character strengths (e.g., curiosity, perseverance, kindness, love of learning). Using these strengths in new ways leads to increased engagement and fulfillment.",
+          "actionableSteps": [
+            "Take the free VIA Character Strengths survey online to identify your top 5 'signature strengths'.",
+            "Each day, find a new way to use one of your top strengths, especially at work."
+          ],
+          "clinicalNotes": "Using one's signature strengths is a core intervention in Positive Psychotherapy and is linked to reduced depression and increased happiness."
+        },
+        {
+          "id": "HL-05",
+          "title": "Set and Work Toward Meaningful Goals",
+          "evidenceLevel": "Medium",
+          "description": "Working toward self-concordant goals (goals that are aligned with your core values and interests) provides a sense of purpose, autonomy, and accomplishment.",
+          "actionableSteps": [
+            "Set SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) that are personally meaningful, not just imposed by others.",
+            "Break large goals into small, manageable steps and celebrate small wins along the way."
+          ],
+          "clinicalNotes": "Progress toward meaningful goals is a key driver of well-being, as outlined in Self-Determination Theory (autonomy, competence, relatedness)."
+        },
+        {
+          "id": "HL-06",
+          "title": "Practice Self-Compassion",
+          "evidenceLevel": "High",
+          "description": "Treating yourself with the same kindness, concern, and support you'd show a good friend when they fail or feel inadequate, rather than with harsh self-criticism.",
+          "actionableSteps": [
+            "When you struggle or fail, acknowledge your pain by saying, 'This is a moment of suffering' or 'This is really hard right now.'",
+            "Remind yourself that imperfection is part of the shared human experience; you are not alone.",
+            "Be kind to yourself. Use a supportive inner dialogue (e.g., 'What do I need to hear right now?')."
+          ],
+          "clinicalNotes": "Research by Kristin Neff shows self-compassion is strongly associated with emotional resilience, lower anxiety and depression, and healthier lifestyle habits."
+        },
+        {
+          "id": "HL-07",
+          "title": "Cultivate Mindfulness in Daily Life",
+          "evidenceLevel": "High",
+          "description": "Bringing non-judgmental awareness to everyday activities, which reduces rumination about the past and worry about the future, anchoring you in the present.",
+          "actionableSteps": [
+            "Practice 'single-tasking' instead of multitasking. When eating, just eat. When walking, just walk.",
+            "Engage your senses fully in routine activities: notice the smell of soap in the shower, the feel of water on your hands, the taste of your food."
+          ],
+          "clinicalNotes": "Mindfulness practices decouple sensory experience from self-referential evaluation and narrative, reducing suffering."
+        },
+        {
+          "id": "HL-08",
+          "title": "Invest in Experiences, Not Just Possessions",
+          "evidenceLevel": "Medium",
+          "description": "Research shows that money spent on experiences (travel, concerts, classes) provides more lasting happiness than money spent on material goods. Experiences become part of our identity and are more open to positive reinterpretation over time.",
+          "actionableSteps": [
+            "When considering a purchase, ask if it will provide an experience or a memory.",
+            "Plan and anticipate future experiences, as the anticipation itself is a source of pleasure."
+          ],
+          "clinicalNotes": "Material purchases are subject to hedonic adaptation much faster than experiential purchases."
+        },
+        {
+          "id": "HL-09",
+          "title": "Limit Social Comparison",
+          "evidenceLevel": "Medium",
+          "description": "Comparing oneself to others, especially on social media where others present curated highlights, is a major thief of joy and a contributor to depression and anxiety.",
+          "actionableSteps": [
+            "Practice noticing when you are comparing yourself and gently redirect your attention to your own values and progress.",
+            "Curate your social media to unfollow accounts that trigger negative comparisons.",
+            "Practice 'comparing downward'—acknowledging your privileges and fortunes—to foster gratitude, but do this with compassion, not superiority."
+          ],
+          "clinicalNotes": "The tendency for upward social comparison is linked to lower self-esteem and higher levels of stress and resentment."
+        },
+        {
+          "id": "HL-10",
+          "title": "Seek Flow States",
+          "evidenceLevel": "Medium",
+          "description": "A 'flow state' is the experience of being fully immersed, focused, and absorbed in a challenging but achievable activity, to the point where you lose track of time and your sense of self.",
+          "actionableSteps": [
+            "Identify activities that challenge your skills just enough to be engaging but not so much that they cause anxiety (e.g., playing an instrument, rock climbing, coding, gardening).",
+            "Set aside uninterrupted time to engage in these activities regularly."
+          ],
+          "clinicalNotes": "Flow, as described by Mihaly Csikszentmihalyi, is a powerful source of intrinsic motivation and satisfaction."
+        }
+      ]
+    },
+    "reproductiveHealth": {
+      "categoryDescription": "Evidence-based recommendations for maintaining the health of the reproductive systems for all genders, covering physical, mental, and social aspects of well-being. Based on guidelines from WHO, ACOG, and other medical bodies.",
+      "advice": [
+        {
+          "id": "RH-01",
+          "title": "Practice Safe Sex Consistently and Correctly",
+          "evidenceLevel": "High",
+          "description": "The most effective way to prevent sexually transmitted infections (STIs/STDs) and unintended pregnancy.",
+          "actionableSteps": [
+            "Use a new latex or polyurethane condom for every act of vaginal, anal, and oral sex.",
+            "For pregnancy prevention, discuss and use a reliable form of contraception (e.g., IUD, implant, pill) with guidance from a healthcare provider.",
+            "Get tested for STIs regularly and ensure your partners do the same, especially with new partners."
+          ],
+          "clinicalNotes": "Condoms are the only method that provides significant protection against both pregnancy and STIs."
+        },
+        {
+          "id": "RH-02",
+          "title": "Attend Regular Preventive Healthcare Screenings",
+          "evidenceLevel": "High",
+          "description": "Regular check-ups allow for early detection and treatment of potential issues, including cancers, STIs, and other reproductive conditions.",
+          "actionableSteps": [
+            "People with a cervix: Follow guidelines for Pap smears/HPV testing (typically every 3-5 years starting at age 21-25).",
+            "Breast awareness/self-exams and clinical breast exams as recommended based on age and risk.",
+            "Testicular self-exams monthly for early detection of testicular cancer.",
+            "STI testing annually or with new sexual partners."
+          ],
+          "clinicalNotes": "Screening guidelines can vary based on personal and family history. Always follow the specific advice of your healthcare provider."
+        },
+        {
+          "id": "RH-03",
+          "title": "Maintain a Healthy Weight and Diet",
+          "evidenceLevel": "High",
+          "description": "Body weight and nutrition significantly impact hormone regulation, fertility, and the risk of conditions like PCOS and endometriosis.",
+          "actionableSteps": [
+            "Aim for a balanced diet rich in fruits, vegetables, whole grains, and lean proteins.",
+            "Maintain a weight that is healthy for you. Both underweight and overweight can disrupt menstrual cycles and ovulation and lower sperm count.",
+            "Stay hydrated with water."
+          ],
+          "clinicalNotes": "For women with PCOS, even a 5-10% reduction in body weight can restore ovulation and improve fertility."
+        },
+        {
+          "id": "RH-04",
+          "title": "Engage in Regular Physical Activity",
+          "evidenceLevel": "High",
+          "description": "Exercise helps regulate hormones, reduces stress, improves circulation, and helps maintain a healthy weight—all beneficial for reproductive health.",
+          "actionableSteps": [
+            "Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity per week, plus strength training."
+          ],
+          "clinicalNotes": "Extreme, excessive exercise can have the opposite effect, suppressing ovulation and disrupting menstrual cycles."
+        },
+        {
+          "id": "RH-05",
+          "title": "Limit Alcohol and Avoid Recreational Drugs and Smoking",
+          "evidenceLevel": "High",
+          "description": "Substance use can impair sexual function, lower fertility, and harm a developing fetus. Smoking damages reproductive organs and ages ovaries.",
+          "actionableSteps": [
+            "If you drink alcohol, do so in moderation (e.g., up to 1 drink per day for women, 2 for men).",
+            "Avoid smoking and exposure to secondhand smoke.",
+            "Avoid illicit drugs. Discuss prescription medications with your doctor regarding their impact on reproductive health."
+          ],
+          "clinicalNotes": "Smoking is a major cause of erectile dysfunction in men and reduced ovarian reserve and earlier menopause in women."
+        },
+        {
+          "id": "RH-06",
+          "title": "Manage Chronic Stress",
+          "evidenceLevel": "Medium",
+          "description": "Chronic stress elevates cortisol levels, which can disrupt the delicate balance of reproductive hormones (GnRH), leading to suppressed ovulation, low sperm count, and low libido.",
+          "actionableSteps": [
+            "Implement the stress management techniques listed in the 'StressManagement' section of this dataset."
+          ],
+          "clinicalNotes": "Stress is rarely the sole cause of infertility but can be a significant contributing factor."
+        },
+        {
+          "id": "RH-07",
+          "title": "Practice Good Genital Hygiene",
+          "evidenceLevel": "Medium",
+          "description": "Simple habits can prevent infections and irritation.",
+          "actionableSteps": [
+            "Wash daily with warm water and mild, unscented soap. Avoid douching, as it disrupts the natural vaginal flora and can lead to infections.",
+            "Wipe from front to back after using the toilet to prevent spreading bacteria from the anus to the vagina or urethra.",
+            "Wear breathable, cotton underwear and avoid overly tight clothing for extended periods."
+          ],
+          "clinicalNotes": "The vagina is self-cleaning. Douching is not recommended by any major medical organization."
+        },
+        {
+          "id": "RH-08",
+          "title": "Have Open Communication with Partners and Providers",
+          "evidenceLevel": "High",
+          "description": "Honest communication is essential for informed consent, pleasure, safety, and addressing concerns.",
+          "actionableSteps": [
+            "Discuss sexual history, STI status, and contraception with partners before engaging in sexual activity.",
+            "Talk to your healthcare provider openly about any concerns regarding menstruation, sexual function, pain, or libido. No topic is off-limits."
+          ],
+          "clinicalNotes": "Embarrassment is a major barrier to seeking care for reproductive health issues, leading to delayed diagnosis and treatment."
+        },
+        {
+          "id": "RH-09",
+          "title": "Be Aware of Changes and Seek Help Promptly",
+          "evidenceLevel": "High",
+          "description": "Your body provides signals. Noticing changes and addressing them early is key to maintaining health.",
+          "actionableSteps": [
+            "Pay attention to your body. Note any changes in menstrual cycles, discharge, pain during sex or urination, lumps, sores, or unexpected bleeding.",
+            "Do not ignore persistent symptoms. Schedule an appointment with a healthcare provider (gynecologist, urologist, or primary care physician) for evaluation."
+          ],
+          "clinicalNotes": "Many serious conditions, like cancers and infections, are highly treatable when caught early."
+        },
+        {
+          "id": "RH-10",
+          "title": "Educate Yourself from Reputable Sources",
+          "evidenceLevel": "High",
+          "description": "Accurate knowledge empowers you to make informed decisions about your body and health.",
+          "actionableSteps": [
+            "Seek information from reliable sources like the World Health Organization (WHO), Centers for Disease Control and Prevention (CDC), American College of Obstetricians and Gynecologists (ACOG), and Planned Parenthood.",
+            "Be critical of misinformation spread on social media and unverified websites."
+          ],
+          "clinicalNotes": "Health literacy is a key social determinant of health outcomes."
+        }
+      ]
+    }
+  }
+}

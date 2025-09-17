@@ -1,0 +1,12 @@
+{
+  "name": "healthy-india",
+  "version": "1.0.0",
+  "description": "AI-Powered Healthcare Assistant",
+  "scripts": {
+    "deploy": "firebase deploy",
+    "serve": "firebase serve"
+  },
+  "devDependencies": {
+    "firebase-tools": "^12.0.0"
+  }
+}

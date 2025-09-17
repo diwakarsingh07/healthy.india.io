@@ -1,0 +1,22 @@
+{
+  "name": "Healthy India - AI Healthcare Assistant",
+  "short_name": "Healthy India",
+  "description": "AI-powered healthcare assistant for symptom analysis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "WhatsApp Image 2025-09-16 at 9.36.53 PM.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "WhatsApp Image 2025-09-16 at 9.36.53 PM.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
