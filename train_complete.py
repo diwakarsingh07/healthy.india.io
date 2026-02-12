@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # Load complete health dataset
-with open("backend/health_dataset.json", "r", encoding="utf-8") as f:
+with open("health_dataset.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Prepare training data
@@ -45,8 +45,8 @@ model_data = {
     'disease_data': {d["name"]: d for d in data["diseases"]}
 }
 
-with open("backend/app_backend/trained_model.pkl", "wb") as f:
+with open("trained_model.pkl", "wb") as f:
     pickle.dump(model_data, f)
 
 print(f"Trained model with {len(diseases)} diseases")
-print("Model saved to backend/app_backend/trained_model.pkl")
+print("Model saved to trained_model.pkl")

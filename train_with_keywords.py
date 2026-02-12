@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 
 # Load complete health dataset
-with open("backend/health_dataset.json", "r", encoding="utf-8") as f:
+with open("health_dataset.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Prepare training data with keywords
@@ -78,7 +78,7 @@ model_data = {
     'disease_keywords': disease_keywords
 }
 
-with open("backend/app_backend/trained_model.pkl", "wb") as f:
+with open("trained_model.pkl", "wb") as f:
     pickle.dump(model_data, f)
 
 print(f"Trained model with {len(diseases)} diseases and keywords")
