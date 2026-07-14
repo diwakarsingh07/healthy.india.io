@@ -2,7 +2,7 @@ import json
 import os
 
 # Load the dataset
-DATASET_PATH = os.path.join("backend", "health_dataset.json")
+DATASET_PATH = "health_dataset.json"
 with open(DATASET_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
     DATASET = {}
